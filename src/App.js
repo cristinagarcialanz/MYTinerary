@@ -11,9 +11,13 @@ function App() {
       <NavBar />
       
       <Routes>
-        <Route path='*' element={<Home/>} ></Route>
-        <Route path='/Home' element={<Home/>} ></Route>
-        <Route path='/Cities' element={<Cities/>} ></Route>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Home' element={<Home/>} />
+        <Route path='/Cities' element={<Cities/>} />
+        
+        <Route path="*" element={<h2>¡Página no encontrada!</h2>} />
+
+
       </Routes>
 
       <Footer />

@@ -18,12 +18,12 @@ export default function Carousel() {
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 3000)}s`;
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   
   return (
-    <>
-      <div id='contenedor' className='contenedor'>
+    <div className='max-container'>
+      <div id='container'>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -56,6 +56,6 @@ export default function Carousel() {
           </div>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 }

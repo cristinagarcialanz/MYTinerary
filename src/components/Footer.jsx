@@ -40,11 +40,11 @@ function Footer(params) {
 
               </ul>
 
-              <p>MYTinerary 2023 © Todos los derechos reservados</p>
+              
             </div>
-
+            
           </div>
-
+          <p>MYTinerary 2023 © Todos los derechos reservados</p>
         </div>
 
       </footer>

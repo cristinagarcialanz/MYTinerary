@@ -17,8 +17,8 @@ export default function CarouselCards() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={4}
+        spaceBetween={20}        
         pagination={{
           clickable: true,
         }}

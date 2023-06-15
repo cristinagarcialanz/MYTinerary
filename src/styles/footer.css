@@ -1,11 +1,14 @@
 footer {
+  width: 100%;
   background: #151515;
-  padding: 80px 0px;
+  padding: 1rem 0;
+  
 }
 
 footer .foo-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0 0 0 2rem;
 }
 
 footer .foo-row .foo-col {
