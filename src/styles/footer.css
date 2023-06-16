@@ -1,53 +1,45 @@
 footer {
   width: 100%;
-  background: #151515;
-  padding: 1rem 0;
+  background: #2C2B2B;
+  padding: 0;
   
 }
-
+.container{
+  padding: 2rem 2rem 1rem;
+}
 footer .foo-row {
   display: flex;
   justify-content: space-around;
-  padding: 0 0 0 2rem;
 }
 
 footer .foo-row .foo-col {
   width: 50%;
 }
 
-footer .foo-row .foo-col:last-child {
-  margin-left: 50px;
-}
-
-footer .foo-row .foo-col:first-child {
-  margin-right: 50px;
-}
-
 footer .foo-row .foo-col h2 {
   color: #E3E3E3;
   line-height: 40px;
 
-  font-size: 33px;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 footer form .f-input {
-  width: 100%;
+  width: 70%;
   position: relative;
 }
 
 footer form .f-input input {
-  width: 100%;
+  width: 94%;
   display: block;
-  padding: 16px 30px;
-  background: #2C2B2B;
+  padding: 1rem;
+  background: white;
   border: none;
-  padding-right: 50px;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 25px;
   outline: 0;
-  color: #A7A1A1;
+  color: #A7A1A1;;
 }
 
 footer form .f-input .hm-btn-round {
@@ -58,42 +50,59 @@ footer form .f-input .hm-btn-round {
   width: 42px;
   height: 42px;
   border: none;
-  font-size: 18px;
-  margin-right: 3px;
+  font-size: 1.3rem;
+  /* margin-right: 3px; */
   cursor: pointer;
+  border-radius: 20px;
 }
 
 footer .foo-row .foo-col ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 footer .foo-row .foo-col ul li {
   width: 50%;
-  margin-bottom: 16px;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  list-style: none;
 }
 
 footer .foo-row .foo-col ul li a {
   color: #E3E3E3;
-  font-size: 15px;
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 footer .foo-row .foo-col ul li a:hover {
-  color: var(--color-principal);
-  text-decoration: underline;
+  color: #f44336;
+}
+
+.icono-redes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+}
+.icono-redes a{
+  color: #f44336;
+  display: flex;
+}
+.icono-redes a:hover{
+  color: #551A8B;
+
 }
 
 
 .foo-copy {
-  background: #000000;
-  padding: 40px 0px;
-}
-
-.foo-copy p {
   text-align: center;
   color: #E3E3E3;
-  font-size: 14px;
+  font-size: 1.3rem;
   font-weight: 300;
 }

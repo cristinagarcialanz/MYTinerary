@@ -18,11 +18,11 @@ function Footer(params) {
 
           <div class="foo-row">
             <div class="foo-col">
-              <h2>Suscribete<br/>a nuestro Newsletter</h2>
+              <h2>Subscribe <br/>to our Newsletter</h2>
               <form action="" method="GET">
 
                 <div class="f-input">
-                  <input type="text" placeholder="Ingrese su correo"/>
+                  <input type="text" placeholder="Enter your email"/>
                     <button type="submit" class="hm-btn-round btn-primary"><SendIcon /></button>
                 </div>
               </form>
@@ -32,23 +32,17 @@ function Footer(params) {
             <div class="foo-col">
               <ul>
                 <li><a className="nav-link" id="Productos" href="#">Cities</a></li>
-                <a href="https://www.instagram.com"><InstagramIcon /> </a>
+                <div className='icono-redes'><a href="https://www.instagram.com"><InstagramIcon /></a></div>
                 <li><a className="nav-link" id="Nosotros" href="#">About Us</a></li>
-                <a href="https://www.facebook.com"> <FacebookIcon /></a>
+                <div className='icono-redes'><a href="https://www.facebook.com"> <FacebookIcon /></a></div>
                 <li><a className="nav-link" id="Contacto" href="#">Contact</a></li>
-                <a href="https://www.whatsapp.com"> <WhatsAppIcon /></a>
-
+                <div className='icono-redes'><a href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
               </ul>
-
-              
             </div>
-            
           </div>
-          <p>MYTinerary 2023 © Todos los derechos reservados</p>
+          <p className='foo-copy'>MYTinerary 2023 © All rights reserved</p>
         </div>
-
       </footer>
-
     </div>
   )
 }

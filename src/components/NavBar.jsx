@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Link as LinkRouter } from "react-router-dom";
+import '../styles/navBar.css';
 
 const pages = [
 
@@ -54,8 +55,9 @@ function NavBar() {
         <Toolbar disableGutters>
           <Box sx={{width: '25%', display: { xs: 'none', md: 'flex' }, justifyContent: 'start' }}>
           <LinkRouter className='LinkRouter' to={'/Home'}>
-            <AirplanemodeActiveIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <AirplanemodeActiveIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '2rem' }} />
             <Typography
+              className='font-class'
               variant="h6"
               noWrap
               component="a"
@@ -63,10 +65,10 @@ function NavBar() {
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
+                fontSize: '2rem',
                 fontWeight: 700,
                 letterSpacing: '.3rem',
-                color: 'primary',
+                color: 'white',
                 textDecoration: 'none',
               }}
             >
@@ -100,14 +102,14 @@ function NavBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' }, color:"primary"
               }}
             >
               {pages.map((page, index) => (
 
                 <LinkRouter className='LinkRouter' to={page.path}>
                   <MenuItem key={index} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.icon}{page.name}</Typography>
+                    <Typography textAlign="center" color='white'> {page.icon}{page.name}</Typography>
                   </MenuItem>
                 </LinkRouter>
 
@@ -116,25 +118,27 @@ function NavBar() {
           </Box>
 
           <Box sx={{ display: { xs: 'flex', md: 'none' }, width: '65%', justifyContent: 'center' }}>
-
+          <LinkRouter className='LinkRouter' to={'/Home'}>
           <AirplanemodeActiveIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
+            className='font-class'
             component="a"
             href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },              
-              fontFamily: 'monospace',
+              fontSize: '1rem',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'secundary',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
             MYTinerary
           </Typography>
+          </LinkRouter>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, width:'50%' }}>
@@ -143,7 +147,7 @@ function NavBar() {
               <LinkRouter className='LinkRouter' to={page.path}>
                 <Button
                   key={index}
-                  onClick={handleCloseNavMenu}
+                  onClick={handleCloseNavMenu}  
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page.icon}{page.name}
@@ -176,7 +180,7 @@ function NavBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center" color="white" fontFamily= '-apple-system'>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>

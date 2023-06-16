@@ -20,10 +20,38 @@ body {
 .slogan{
   display: flex;
   justify-content: center;
+  color:white;
 }
 
 
 .titulo{
   display: flex;
   justify-content: center;
+}
+.banner-container{
+  background-image: url(../img/maldives.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.modal{
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 60%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.modal button{
+  display: flex;
+  background: #f44336;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #551A8B;
 }

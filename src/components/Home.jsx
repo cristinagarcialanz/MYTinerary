@@ -8,11 +8,15 @@ function Home() {
 
   return (
     <>
-      <button>
+    <div className='banner-container'>
+      <h1 className='slogan'>Find your perfect trip, designed by insiders who know and love their cities! </h1>
+      <div className='modal'>
+        <button>
         <LinkRouter to={'/Cities'}> Cities </LinkRouter>
       </button>
-      <h1 className='slogan'>Find your perfect trip, designed by insiders who know and love their cities! </h1>
-      
+      </div>
+    </div>
+           
       <h3 className='titulo'>Popular MYTineraries</h3>
       <CarouselCards />
       

@@ -1,17 +1,11 @@
-import Carousel from './Carousel'
-import '../styles/carousel.css'
-
+import '../styles/cities.css'
 
 function Cities() {
 
     return (
-        <>
-
-            <h1> Elige tu destino turistico... </h1>
-
-            <Carousel className='CarouselStyles' />
+        <div className='in-construction'>
             
-        </>
+        </div>
     )
 }
 export default Cities;

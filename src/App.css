@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Lato&family=Roboto&family=Roboto+Condensed&display=swap');
+
+body{
+    background: white !important;
+}
+
 .LinkRouter{
     text-decoration: none;
     display: flex;
@@ -6,4 +13,9 @@
     align-items: center;
     width: 100%;
     height: 100%;    
+    color: white;;
+    
+}
+.font-class{
+    font-family: 'Kablammo', cursive !important;
 }
