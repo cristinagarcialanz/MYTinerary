@@ -89,11 +89,12 @@ export default function CarouselCards() {
           {cities.map(city=>
             <SwiperSlide><img src={city.image} alt={city.name} /><div className="slide-caption">{city.name}</div></SwiperSlide>
           )
+          
           }
           
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="autoplay-progress" slot="container-end">
+          <div className="swiper-button-next navigation-button"></div>
+          <div className="swiper-button-prev navigation-button"></div>
+          <div className="autoplay-progress autoplay-counter" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>
             </svg>
