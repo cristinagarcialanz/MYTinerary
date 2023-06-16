@@ -31,11 +31,11 @@ function Footer(params) {
 
             <div class="foo-col">
               <ul>
-                <li><a className="nav-link" id="Productos" href="#">Cities</a></li>
+                <li><a className="nav-link" id="Productos" href="https://www.instagram.com/accounts/login/">Cities</a></li>
                 <a href="https://www.instagram.com"><InstagramIcon /> </a>
-                <li><a className="nav-link" id="Nosotros" href="#">About Us</a></li>
+                <li><a className="nav-link" id="Nosotros" href="https://es-la.facebook.com/login/device-based/regular/login/">About Us</a></li>
                 <a href="https://www.facebook.com"> <FacebookIcon /></a>
-                <li><a className="nav-link" id="Contacto" href="#">Contact</a></li>
+                <li><a className="nav-link" id="Contacto" href="https://www.whatsapp.com/?lang=es">Contact</a></li>
                 <a href="https://www.whatsapp.com"> <WhatsAppIcon /></a>
 
               </ul>
