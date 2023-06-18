@@ -19,39 +19,121 @@ body {
 
 .slogan{
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
+  text-align: center !important;
   color:white;
 }
+/* @media (max-width: 768px) {
+  .slogan{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center !important;
+  }
+} */
 
+.title-carousel{
+  background-color: #ffa100;
+  width: 30%;
+  border-radius: 0 3rem 3rem 0;
+}
 
 .titulo{
   display: flex;
   justify-content: center;
+  padding: 1.2rem 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+
 }
 .banner-container{
-  background-image: url(../img/maldives.jpg);
+  background-image: url(../img/fondo2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 18rem;
+  background-position: center;
+  height: 20rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .modal{
-  background-color: white;
+  background-color: #f3fdfa;
   position: relative;
   border-radius: 10px;
   width: 60%;
   height: 10rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
-.modal button{
+.modal h3{
+  width: 100%;
   display: flex;
-  background: #f44336;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  color: #551A8B;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+.modal h3 a{
+ background-color: transparent;
+}
+.modal h3 a img{
+  width: 9rem;
+ }
+ 
+ @media (max-width: 768px){
+  .title-carousel{
+    width: 50%;
+  }
+  .modal{
+    height: 8rem;
+  }
+  .modal h3{
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .modal h3 a img{
+    width: 7.2rem;
+  }
+ }
+ @media (max-width: 426px){
+  .modal{
+    height: 10rem;
+  }
+  .title-carousel{
+    width: 65%;
+    margin: 0 ;
+  }
+  .titulo{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  
+  }
+  .modal h3{
+    font-size: 1.3rem;
+  }
+  .modal h3 a img{
+    width: 7rem;
+  }
+ }
+ @media (max-width: 376px){
+  .modal h3{
+    font-size: 1.2rem;
+  }
+  .modal h3 a img{
+    width: 7rem;
+  }
+ }
+ @media (max-width: 321px){
+  .modal h3{
+    font-size: 1rem;
+  }
+  .modal h3 a img{
+    width: 7rem;
+  }
+ }

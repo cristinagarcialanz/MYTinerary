@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#f44336',
+      main: '#ffa100',
     },
     secundary: {
       main: '#ffffff',

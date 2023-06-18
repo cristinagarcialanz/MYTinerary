@@ -11,13 +11,16 @@ function Home() {
     <div className='banner-container'>
       <h1 className='slogan'>Find your perfect trip, designed by insiders who know and love their cities! </h1>
       <div className='modal'>
-        <button>
-        <LinkRouter to={'/Cities'}> Cities </LinkRouter>
-      </button>
+
+       <h3>Choose your tourist destination...
+        <LinkRouter to={'/Cities'}><a href="#"><img src="https://cdn.discordapp.com/attachments/1116849578575155230/1120061436018823290/pandb-travel.gif" /></a></LinkRouter>
+        </h3>
       </div>
     </div>
-           
-      <h3 className='titulo'>Popular MYTineraries</h3>
+      <div className='title-carousel'>
+        <h3 className='titulo'>Popular MYTineraries</h3>
+      </div>
+      
       <CarouselCards />
       
       

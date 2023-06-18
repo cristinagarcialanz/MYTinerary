@@ -4,10 +4,9 @@ import SendIcon from '@mui/icons-material/Send';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { Link as LinkRouter } from "react-router-dom";
 
 function Footer(params) {
-
-
 
   return (
     <div className='footer'>
@@ -31,12 +30,15 @@ function Footer(params) {
 
             <div class="foo-col">
               <ul>
-                <li><a className="nav-link" id="Productos" href="#">Cities</a></li>
-                <div className='icono-redes'><a  href="https://www.instagram.com"><InstagramIcon /> </a></div>
-                <li><a className="nav-link" id="Nosotros" href="#">About Us</a></li>
-                <div className='icono-redes'> <a  href="https://www.facebook.com"> <FacebookIcon /></a></div>
-                <li><a className="nav-link" id="Contacto" href="#">Contact</a></li>
-                <div className='icono-redes'><a href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
+
+                 <li><LinkRouter to={'/Cities'}><a href="#">Cities</a></LinkRouter></li> 
+
+                <div className='social-media'>
+                   <div className='icono-redes'><a  href="https://www.instagram.com"><InstagramIcon /> </a></div>
+                  <div className='icono-redes'> <a  href="https://www.facebook.com"> <FacebookIcon /></a></div>
+                  <div className='icono-redes'><a href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
+                </div>
+               
                 
 
               </ul>

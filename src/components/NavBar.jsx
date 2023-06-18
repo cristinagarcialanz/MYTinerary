@@ -53,7 +53,7 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{width: '25%', display: { xs: 'none', md: 'flex' }, justifyContent: 'start' }}>
+          <Box sx={{width: '35%', display: { xs: 'none', md: 'flex' }, justifyContent: 'start' }}>
           <LinkRouter className='LinkRouter' to={'/Home'}>
             <AirplanemodeActiveIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '2rem' }} />
             <Typography
@@ -141,13 +141,14 @@ function NavBar() {
           </LinkRouter>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, width:'50%' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, width:'50%'}}>
             {pages.map((page, index) => (
 
               <LinkRouter className='LinkRouter' to={page.path}>
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}  
+                  fontSize='30px'
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page.icon}{page.name}
@@ -156,7 +157,7 @@ function NavBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 1, width:'25%', display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flexGrow: 1, width:'10%', display: 'flex', justifyContent: 'flex-end' }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Travis Howard" src="../img/logo3.png" />
@@ -180,7 +181,7 @@ function NavBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center" color="white" fontFamily= '-apple-system'>{setting}</Typography>
+                  <Typography textAlign="center" color="#ffa100">{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>

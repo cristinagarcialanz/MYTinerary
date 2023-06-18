@@ -1,4 +1,11 @@
 .css-6hp17o-MuiList-root-MuiMenu-list{
-    background-color: #f44336 !important;
+    background-color: #ffffff !important;
     
+    
+}
+.css-1g5y689-MuiTypography-root{
+    color: #ffa100 !important;
+}
+.css-izsv5n-MuiButtonBase-root-MuiButton-root{
+    font-size: 1.2rem !important;
 }
