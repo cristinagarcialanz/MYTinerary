@@ -38,9 +38,6 @@ function Footer(params) {
                   <div className='icono-redes'> <a  href="https://www.facebook.com"> <FacebookIcon /></a></div>
                   <div className='icono-redes'><a href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
                 </div>
-               
-                
-
               </ul>
             </div>
           </div>

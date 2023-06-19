@@ -19,7 +19,6 @@ footer .foo-row .foo-col {
 footer .foo-row .foo-col h2 {
   color: #E3E3E3;
   line-height: 40px;
-
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 20px;
@@ -66,23 +65,20 @@ footer .foo-row .foo-col ul {
 footer .foo-row .foo-col ul li {
   width: 50%;
   height: 100%;
-  margin-bottom: 1.5rem;
+  margin-top: .5rem;
   list-style: none;
 }
 
 footer .foo-row .foo-col ul li a {
-  color: #E3E3E3;
+  color: #ffa100;
   font-size: 1.3rem;
   text-decoration: none;
 }
 
 footer .foo-row .foo-col ul li a:hover {
-  color: #f44336;
+  color: #007aff;
 }
 
-.social-media{
-
-}
 
 .icono-redes{
   display: flex;
@@ -110,11 +106,34 @@ footer .foo-row .foo-col ul li a:hover {
   font-size: 1rem;
   font-weight: 300;
 }
+
+
+@media (min-width: 1024px){
+  footer form .f-input .hm-btn-round{
+    right: -10px;
+    border-radius: 0 25px 25px 0;
+    width: 50px;
+    height: 50px;
+  }
+  footer form .f-input input{
+    border-radius: 0 25px 25px 0;
+  }
+}
+
+
 @media (max-width: 768px){
   footer .foo-row .foo-col h2 {
     font-size: 1.5rem;
   }
-  .footer .foo-row .foo-col ul li a{
+  footer form .f-input .hm-btn-round{
+    right: -10px;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  footer form .f-input input{
+    border-radius: 0 20px 20px 0;
+  }
+  footer .foo-row .foo-col ul li a{
     font-size: 1rem;
   }
   .icono-redes{
@@ -158,7 +177,9 @@ footer .foo-row .foo-col ul li a:hover {
   footer .foo-row .foo-col h2 {
     line-height: 1.5rem;
   }
-
+  .f-input button svg {
+    font-size: 1rem;
+  }
   
 }
 
