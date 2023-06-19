@@ -30,13 +30,14 @@ function Footer(params) {
 
             <div class="foo-col">
               <ul>
-
-                 <li><LinkRouter to={'/Cities'}><a href="#">Cities</a></LinkRouter></li> 
-
+              <div className='footer-navagation'> 
+                 <li><LinkRouter to={'/Home'}>Home</LinkRouter></li> 
+                 <li><LinkRouter to={'/Cities'}>Cities</LinkRouter></li> 
+                 </div>
                 <div className='social-media'>
-                   <div className='icono-redes'><a  href="https://www.instagram.com"><InstagramIcon /> </a></div>
-                  <div className='icono-redes'> <a  href="https://www.facebook.com"> <FacebookIcon /></a></div>
-                  <div className='icono-redes'><a href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
+                   <div className='icono-redes'><a target="_blank" href="https://www.instagram.com"><InstagramIcon /> </a></div>
+                  <div className='icono-redes'> <a target="_blank" href="https://www.facebook.com"> <FacebookIcon /></a></div>
+                  <div className='icono-redes'><a target="_blank" href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
                 </div>
               </ul>
             </div>

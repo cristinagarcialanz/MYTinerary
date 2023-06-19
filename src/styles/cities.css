@@ -1,8 +1,9 @@
 .in-construction{
     width: 98vw;
     height: 70vh;
-    background-image: url(../img/construction.jpeg);
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/construction.jpeg?alt=media&token=57a5d4fa-8b19-43ac-b3bf-9bc7f15fc9c2');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
+    margin-top: 1rem;
 }

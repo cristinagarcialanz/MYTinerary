@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .css-6hp17o-MuiList-root-MuiMenu-list{
     background-color: #ffffff !important;
     
@@ -8,4 +9,5 @@
 }
 .css-izsv5n-MuiButtonBase-root-MuiButton-root{
     font-size: 1.2rem !important;
+    font-family: 'Rubik' !important;
 }

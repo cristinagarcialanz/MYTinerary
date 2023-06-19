@@ -23,15 +23,6 @@ body {
   text-align: center !important;
   color:white;
 }
-/* @media (max-width: 768px) {
-  .slogan{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center !important;
-  }
-} */
 
 .title-carousel{
   background-color: #ffa100;
@@ -48,7 +39,7 @@ body {
 
 }
 .banner-container{
-  background-image: url(../img/fondo2.jpg);
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/fondo2.jpg?alt=media&token=33e6d44e-ee14-445d-8cc4-315cde631f45');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,13 +76,17 @@ body {
 .modal h3 a img{
   width: 9rem;
  }
+ .modal h3 a img:hover{
+  background-color: #f3fdfa;
+  transition: 0.3s ease-in-out;
+  width: 10rem;
+  box-shadow: 5px 10px 10px 0px #363636;
+  border-radius: 10px;
+ }
  
  @media (max-width: 768px){
   .title-carousel{
     width: 50%;
-  }
-  .modal{
-    height: 8rem;
   }
   .modal h3{
     font-size: 1.3rem;
@@ -103,7 +98,7 @@ body {
  }
  @media (max-width: 426px){
   .modal{
-    height: 10rem;
+    min-height: 11rem;
   }
   .title-carousel{
     width: 65%;

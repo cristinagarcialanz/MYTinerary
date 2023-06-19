@@ -50,7 +50,6 @@ footer form .f-input .hm-btn-round {
   height: 42px;
   border: none;
   font-size: 1.3rem;
-  /* margin-right: 3px; */
   cursor: pointer;
   border-radius: 20px;
 }
@@ -58,14 +57,13 @@ footer form .f-input .hm-btn-round {
 footer .foo-row .foo-col ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 footer .foo-row .foo-col ul li {
   width: 50%;
-  height: 100%;
-  margin-top: .5rem;
+  margin: 1rem 3rem 1rem 0;
   list-style: none;
 }
 
@@ -100,6 +98,7 @@ footer .foo-row .foo-col ul li a:hover {
 
 }
 
+
 .foo-copy {
   text-align: center;
   color: #E3E3E3;
@@ -108,7 +107,7 @@ footer .foo-row .foo-col ul li a:hover {
 }
 
 
-@media (min-width: 1024px){
+@media (min-width: 769px){
   footer form .f-input .hm-btn-round{
     right: -10px;
     border-radius: 0 25px 25px 0;

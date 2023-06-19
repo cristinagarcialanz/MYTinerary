@@ -20,12 +20,7 @@ function Home() {
       <div className='title-carousel'>
         <h3 className='titulo'>Popular MYTineraries</h3>
       </div>
-      
       <CarouselCards />
-      
-      
-
-      
     </>
   )
 }
