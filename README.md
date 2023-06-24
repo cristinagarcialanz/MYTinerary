@@ -12,4 +12,4 @@ Las desarrolladoras del Proyecto son:
 ![Imagen de la página principal](https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/readme.png?alt=media&token=c79c4baa-5300-4232-acdf-4c8877c6d249)
 
 
-
+![Imagen de cities](https://firebasestorage.googleapis.com/v0/b/react-3c2b4.appspot.com/o/cities.png?alt=media&token=86d13da5-0f8d-4981-aef2-98f0d0b0f19a)
