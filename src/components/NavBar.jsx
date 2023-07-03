@@ -60,8 +60,8 @@ function NavBar() {
               className='font-class'
               variant="h6"
               noWrap
-              component="a"
-              href="/"
+              // component="a"
+              // href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -124,8 +124,8 @@ function NavBar() {
             variant="h5"
             noWrap
             className='font-class'
-            component="a"
-            href=""
+            // component="a"
+            // href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },              

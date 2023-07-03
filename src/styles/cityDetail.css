@@ -1,0 +1,77 @@
+
+.card {
+  display: flex;
+  max-width: 98%;  
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+  padding: 16px;
+}
+
+.card-image-container {
+  /*to divide the card into equal halves*/
+  width: 70%;
+  max-height: 80vh;  
+}
+
+.card-image {
+  /*take full width of the first half*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card-detail {
+  padding: 1rem 2rem;
+  /*take full width of the second half*/
+  width: 30%;
+}
+
+.card-detail-caption {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.card-detail-title {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.card-detail-desc {
+  font-size: 1rem;
+  font-family: "Open sans", sans-serif;
+  /*to adjust the spacing the next line*/
+  line-height: 1.5;
+  color: #bcbcbc;
+}
+
+.card-detail-amount-total {
+  font-size: 2rem;
+  margin-right: 24px;
+  font-weight: 600;  
+}
+
+.card-detail-amount-prev-total {
+  font-size: 1remx;
+  /*applt strike through the text*/
+  text-decoration: line-through;
+  font-family: "Open sans", sans-serif;
+}
+
+.card-detail-button {
+  /*there is no need to apply text align here*/
+  display: block;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  width: 30%;
+  border-radius: 0.5rem;
+  background-color: green;
+}
+
+
+.card-detail-amount {
+  display: inline-flex;
+  align-items: center;
+}

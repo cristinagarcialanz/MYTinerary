@@ -13,31 +13,31 @@ function Footer(params) {
       
       <footer>
 
-        <div class="container">
+        <div className="container">
 
-          <div class="foo-row">
-            <div class="foo-col">
+          <div className="foo-row">
+            <div className="foo-col">
               <h2>Subscribe <br/>to our Newsletter</h2>
               <form action="" method="GET">
 
-                <div class="f-input">
+                <div className="f-input">
                   <input type="text" placeholder="Enter your email"/>
-                    <button type="submit" class="hm-btn-round btn-primary"><SendIcon /></button>
+                    <button type="submit" className="hm-btn-round btn-primary"><SendIcon /></button>
                 </div>
               </form>
 
             </div>
 
-            <div class="foo-col">
+            <div className="foo-col">
               <ul>
               <div className='footer-navagation'> 
-                 <li><LinkRouter to={'/Home'}>Home</LinkRouter></li> 
-                 <li><LinkRouter to={'/Cities'}>Cities</LinkRouter></li> 
-                 </div>
+                <li><LinkRouter to={'/Home'}>Home</LinkRouter></li> 
+                <li><LinkRouter to={'/Cities'}>Cities</LinkRouter></li> 
+                </div>
                 <div className='social-media'>
-                   <div className='icono-redes'><a target="_blank" href="https://www.instagram.com"><InstagramIcon /> </a></div>
-                  <div className='icono-redes'> <a target="_blank" href="https://www.facebook.com"> <FacebookIcon /></a></div>
-                  <div className='icono-redes'><a target="_blank" href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
+                  <div className='icono-redes'><a target="_blank" rel='noreferrer' href="https://www.instagram.com"><InstagramIcon /> </a></div>
+                  <div className='icono-redes'> <a target="_blank" rel='noreferrer' href="https://www.facebook.com"> <FacebookIcon /></a></div>
+                  <div className='icono-redes'><a target="_blank" rel='noreferrer' href="https://www.whatsapp.com"> <WhatsAppIcon /></a></div>
                 </div>
               </ul>
             </div>
