@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
 import * as React from 'react';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Link as LinkRouter } from "react-router-dom";
 
 function CityDetail() {
 
@@ -24,6 +26,7 @@ function CityDetail() {
   return (
 
     <>
+    <LinkRouter className='backCities' to={'/Cities'}><ArrowBackIcon />Cities</LinkRouter>
       {
         city.length > 0 ?
           <div>

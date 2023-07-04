@@ -22,6 +22,7 @@ function Cities() {
 
   const [cities, setCities] = useState([])
   const [searchTerm, setSearchTerm] = useState('');
+  const [favorites, setFavorites] = useState([]);
   let citiesDB
 
   async function getData() {
@@ -47,6 +48,17 @@ const filteredCitiesByName = cities.filter((city) =>
   city.name.toLowerCase().includes(searchTerm.toLowerCase())
 );
 const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length === 0;
+
+const handleFavoriteClick = (cityId) => {
+  if (favorites.includes(cityId)) {
+    setFavorites(favorites.filter((id) => id !== cityId));
+  } else {
+    setFavorites([...favorites, cityId]);
+  }
+};
+
+const isFavorite = (cityId) => favorites.includes(cityId);
+
 
   return (
     <div className='containCities'>
@@ -100,10 +112,14 @@ const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length ==
                 </CardContent>
                 <div className='selects'>
                   <CardActions disableSpacing>
-                  <IconButton aria-label="add to favorites">
+                  <IconButton
+                      className={isFavorite(city._id) ? 'favorite favorite-icon' : 'favorite'}
+                      aria-label="add to favorites"
+                      onClick={() => handleFavoriteClick(city._id)}
+                    >
                     <FavoriteIcon />
                   </IconButton>
-                  <IconButton aria-label="share">
+                  <IconButton aria-label="share" className='share'>
                     <ShareIcon />
                   </IconButton>
                 </CardActions>              

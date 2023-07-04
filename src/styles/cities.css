@@ -61,7 +61,7 @@ transform: translateY(-3px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 
 .messageNoFound{
@@ -130,7 +130,7 @@ transform: translateY(-3px);
   background: linear-gradient(to top,#F1C933 10%,rgba(229,229,229,0) 90%);
   position: relative;
   animation: spin 1s linear reverse infinite;
-  -webkit-animation: spin 0.4s linear reverse infinite;
+  -webkit-animation: spin 0.8s linear reverse infinite;
 }
 
 .plane-spinner::before {
@@ -198,10 +198,6 @@ transform: translateY(-3px);
   color: #cd4c06;
 }
 
-.explore{
-
-}
-
 .explore-button {
   padding: 8px 16px;
   border: none;
@@ -217,4 +213,10 @@ transform: translateY(-3px);
 
 .explore-button:hover {
   background-color: #ff8500;
+}
+.share:hover{
+  color: rgb(7, 227, 7) !important;
+}
+.favorite-icon {
+  color: red !important;
 }

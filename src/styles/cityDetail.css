@@ -1,4 +1,23 @@
-
+.backCities{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: .3rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 2px solid #ffa100;
+  background: #ffa100;
+  width: 7%;
+  margin: 1rem 0 0 1rem;
+  transition: transform 0.3s ease;
+}
+.backCities:hover{
+  border: 2px solid #fbae28;
+  background: #fbae28;
+  transform: scale(1.1);
+}
 .card {
   display: flex;
   max-width: 98%;  
