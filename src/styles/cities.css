@@ -1,3 +1,31 @@
+.containCities{
+  display: flex;
+  flex-direction: column;
+  
+}
+.inputSearch{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 2rem 0 0;
+  justify-content: flex-end;
+}
+.containCities input{
+  width: 20%;
+  padding: .8rem;
+  border-radius: 50px;
+  border: 2px solid #ffa100;
+}
+
+.containCities input:focus {
+  outline: none; /* Para eliminar el contorno de enfoque predeterminado */
+}
+.inputSearch .css-i4bv87-MuiSvgIcon-root{
+  color: #ffa100;
+  rotate: 90deg;
+  font-size: 2rem;
+}
+
 .in-construction {
   width: 100%;
   height: auto;
@@ -6,13 +34,45 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
-
-  margin: 2rem 0;
+  gap: .5rem;
+  margin: 1rem 0;
 }
 
+.cardCities{
+  width: 21%;
+  
+}
+.cardCities .css-46bh2p-MuiCardContent-root{
+  padding: 0;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root  {
+width: 100%;
+transform: translateY(0);
+  transition: transform 0.5s ease;
+  margin: 1rem 0;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root:hover{
+  box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+transform: translateY(-3px);
+}
+.selects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
 
-
+.messageNoFound{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  font-size: 2rem;
+  color: #ffa100;
+}
 /* LOADING*/
 
 .core-page-loader {
@@ -113,3 +173,48 @@
 }
 
 /*FIN LOADING*/
+
+/*Botón subir*/
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #ffa100;
+  border: 3px solid #007aff ;
+  color: #ffffff;
+  position: fixed;
+  font-size: 2.5rem;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 10px #F3EED9;
+  box-shadow: 4px 4px 10px #F3EED9;
+}
+.subir .css-i4bv87-MuiSvgIcon-root{
+  font-size: 2.5rem;
+}
+.subir:hover{
+  color: #cd4c06;
+}
+
+.explore{
+
+}
+
+.explore-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffa100;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: .5rem;
+}
+
+.explore-button:hover {
+  background-color: #ff8500;
+}

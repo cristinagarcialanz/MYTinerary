@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styles/cities.css';
 import { Link as LinkRouter } from 'react-router-dom';
-
 import axios from 'axios';
 import * as React from 'react';
 import Card from '@mui/material/Card';
@@ -15,38 +14,62 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Button from '@mui/material/Button';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Cities() {
 
   const [cities, setCities] = useState([])
-
+  const [searchTerm, setSearchTerm] = useState('');
   let citiesDB
+
   async function getData() {
+    try {
     citiesDB = await axios.get('http://localhost:4000/api/cities');
-    setCities(citiesDB.data.response.cities);
-    //console.log(citiesDB)
-    console.log(cities)
+    const citiesData = citiesDB.data.response.cities;
+      setCities(citiesData);
+
+  } catch (error) {
+    console.log(error);
   }
+}
+    
+  
 
   useEffect(() => {
     getData()
   }, [])
+  
 
-  // useEffect(() => {
-  //   console.log(cities);
-  // }, [cities]);
+
+const filteredCitiesByName = cities.filter((city) =>
+  city.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length === 0;
 
   return (
+    <div className='containCities'>
+      <div className='inputSearch'>
+        <input
+        type="text"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="Search cities"
+      />
+      <SearchIcon />
+      </div>
+      
+    
     <div className='in-construction'>
-
-      {cities.length > 0 ?
-
-        cities.map((city, index) =>
-
-          
-            <div key={index}>
+             
+      {showNoResultsMessage ? (
+          <div className='messageNoFound'>No destinations found</div>
+        ) :
+      
+      filteredCitiesByName.length > 0 ?(
+        filteredCitiesByName.map((city) => (
+  <div key={city._id} className='cardCities'>
 
               <Card sx={{ maxWidth: 345 }}>
                 <CardHeader
@@ -75,25 +98,31 @@ function Cities() {
                     {city.description}
                   </Typography>
                 </CardContent>
-                <CardActions disableSpacing>
+                <div className='selects'>
+                  <CardActions disableSpacing>
                   <IconButton aria-label="add to favorites">
                     <FavoriteIcon />
                   </IconButton>
                   <IconButton aria-label="share">
                     <ShareIcon />
                   </IconButton>
-                </CardActions>
-
-                {/* <CardActions> */} 
-                <LinkRouter to={'/CityDetail/'+city._id}>                
-                  <Button size="small">Explore More</Button>
-                  </LinkRouter>
-                {/* </CardActions> */}
+                </CardActions>              
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <LinkRouter to={'/CityDetail/' + city._id} className='explore'>                
+                 <button className="explore-button">Explore More</button>
+                       </LinkRouter>
+                  </div>
+              
+                </div>
+                
                 
               </Card>
           
-          </div>)
-        :
+          </div>
+          
+          
+          )))
+        :(
   <div>
     <div className="core-page-loader splash">
       <div className="plane-spinner">
@@ -102,10 +131,13 @@ function Cities() {
       </div>
     </div>
   </div>
-}
 
+)}
+<a href="#" className="subir"><KeyboardArrowUpIcon /></a>
     </div >
-  )
-
+    </div >
+    
+    
+  );
 }
 export default Cities;
