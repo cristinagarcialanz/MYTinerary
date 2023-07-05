@@ -28,7 +28,7 @@ export default function CarouselCards() {
       },
       {
         name: "Sydney",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/sidney-australia.jpg?alt=media&token=b6dcc272-d867-4dc8-b2f7-7bef4a35ec76'
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/SidneyAustralia.jpg?alt=media&token=f6681314-7660-4404-9ff1-38ffd71027b5'
       },
       {
         name: "Amsterdam",
@@ -64,7 +64,7 @@ export default function CarouselCards() {
       },
       {
         name: "Paris",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/paris.jpg?alt=media&token=03c748ec-1cff-48df-b43c-100441f47a2d'
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/Paris.jpg?alt=media&token=ee4e8f65-ffe2-454e-925f-a7adcab1f2a9'
       }
     ]
   return (
@@ -85,7 +85,7 @@ export default function CarouselCards() {
           425: {
             slidesPerGroup:2,
             slidesPerView: 2,
-         
+        
           },
           768: {
             slidesPerGroup:3,

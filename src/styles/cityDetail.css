@@ -29,7 +29,7 @@
 
 .card-image-container {
   /*to divide the card into equal halves*/
-  width: 70%;
+  width: 50%;
   max-height: 80vh;  
 }
 
@@ -44,7 +44,7 @@
 .card-detail {
   padding: 1rem 2rem;
   /*take full width of the second half*/
-  width: 30%;
+  width: 50%;
 }
 
 .card-detail-caption {
@@ -76,6 +76,22 @@
   /*applt strike through the text*/
   text-decoration: line-through;
   font-family: "Open sans", sans-serif;
+}
+
+.containerItinerary{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.card-detail-buttonItinerary{
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  width: 30%;
+  border-radius: 0.5rem;
+  background-color: #ffa100;
 }
 
 .card-detail-button {

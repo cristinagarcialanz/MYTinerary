@@ -27,7 +27,7 @@ function Cities() {
 
   async function getData() {
     try {
-    citiesDB = await axios.get('http://localhost:4000/api/cities');
+    citiesDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities');
     const citiesData = citiesDB.data.response.cities;
       setCities(citiesData);
 
@@ -106,7 +106,7 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                   alt="Ciudad"
                 />
                 <CardContent>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" color="text.secondary" padding="0.7rem">
                     {city.description}
                   </Typography>
                 </CardContent>
