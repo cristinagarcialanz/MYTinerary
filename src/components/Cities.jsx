@@ -74,7 +74,7 @@ const isFavorite = (cityId) => favorites.includes(cityId);
       
     
     <div className='in-construction'>
-             
+      
       {showNoResultsMessage ? (
           <div className='messageNoFound'>No destinations found</div>
         ) :
@@ -126,7 +126,7 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <LinkRouter to={'/CityDetail/' + city._id} className='explore'>                
                  <button className="explore-button">Explore More</button>
-                       </LinkRouter>
+                      </LinkRouter>
                   </div>
               
                 </div>

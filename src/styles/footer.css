@@ -102,7 +102,7 @@ footer .foo-row .foo-col ul li a:hover {
 .foo-copy {
   text-align: center;
   color: #E3E3E3;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -116,6 +116,10 @@ footer .foo-row .foo-col ul li a:hover {
   }
   footer form .f-input input{
     border-radius: 0 25px 25px 0;
+  }
+
+  .foo-copy {    
+    font-size: 0.8rem;    
   }
 }
 
@@ -141,6 +145,9 @@ footer .foo-row .foo-col ul li a:hover {
   }
   .footer form .f-input input{
     padding: .8rem;
+  }
+  .foo-copy {    
+    font-size: 0.8rem;    
   }
 }
 
@@ -179,6 +186,9 @@ footer .foo-row .foo-col ul li a:hover {
   .f-input button svg {
     font-size: 1rem;
   }
+  .foo-copy {    
+    font-size: 0.7rem;    
+  }
   
 }
 
@@ -197,6 +207,10 @@ footer .foo-row .foo-col ul li a:hover {
   }
   form{
     width: 140%;
+  }
+
+  .foo-copy {    
+    font-size: 0.7rem;    
   }
 
 }

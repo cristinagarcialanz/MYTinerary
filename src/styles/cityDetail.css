@@ -8,8 +8,8 @@
   font-size: 1rem;
   border-radius: 50px;
   border: 2px solid #ffa100;
-  background: #ffa100;
-  width: 7%;
+  background: #ffa100;  
+  max-width: 5rem;
   margin: 1rem 0 0 1rem;
   transition: transform 0.3s ease;
 }
@@ -19,19 +19,22 @@
   transform: scale(1.1);
 }
 .card {
-  display: flex;
-  max-width: 98%;  
-  margin: 0 auto;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  max-width: 100%;  
+  margin: 0;
   overflow: hidden;
   background-color: white;
-  padding: 16px;
-  flex-wrap: wrap;
+  padding: 0.7rem 0;  
 }
 
 .card-image-container {
   /*to divide the card into equal halves*/
-  width: 50%;
+  width: 47%;
   max-height: 80vh;  
+  min-width: 18rem;
 }
 
 .card-image {
@@ -43,9 +46,10 @@
 }
 
 .card-detail {
-  padding: 1rem 2rem;
+  /* padding: 0.2rem;   */
   /*take full width of the second half*/
-  width: 50%;
+  width: 47%;
+  min-width: 18rem;
 }
 
 .card-detail-caption {
@@ -66,14 +70,21 @@
   color: #bcbcbc;
 }
 
+.card-detail-amount{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .card-detail-amount-total {
-  font-size: 2rem;
-  margin-right: 24px;
-  font-weight: 600;  
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  font-weight: 500;  
 }
 
 .card-detail-amount-prev-total {
-  font-size: 1remx;
+  font-size: 1rem;
   /*applt strike through the text*/
   text-decoration: line-through;
   font-family: "Open sans", sans-serif;
@@ -82,28 +93,43 @@
 .containerItinerary{
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .card-detail-buttonItinerary{
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.7rem;
+  padding: 0.8rem;
   border: none;
   color: #fff;
   width: 30%;
   border-radius: 0.5rem;
   background-color: #ffa100;
+  max-width: 7rem;
+  transition: transform 0.3s ease;
+}
+
+.card-detail-buttonItinerary:hover{
+  border: 2px solid #fbae28;
+  background: #fbae28;
+  transform: scale(1.1);
 }
 
 .card-detail-button {
   /*there is no need to apply text align here*/
   display: block;
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
-  color: #fff;
-  width: 30%;
+  color: #fff;  
+  min-width: 10vw;
   border-radius: 0.5rem;
   background-color: green;
+  transition: transform 0.3s ease;
+}
+
+.card-detail-button:hover{
+  border: 2px solid rgb(23, 133, 23);
+  background: rgb(0, 78, 0);
+  transform: scale(1.1);
 }
 
 

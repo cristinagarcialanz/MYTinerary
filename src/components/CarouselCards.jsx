@@ -17,7 +17,7 @@ export default function CarouselCards() {
     const cities = [
       {
         name: "Ushuaia",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/ushuaia.jpeg?alt=media&token=3650ac11-07a0-48cf-b1a8-124b0ffa6f48'
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/Ushuaia.webp?alt=media&token=99f5af8e-5f82-4ba4-a522-44583fda7540'
       },
       {
         name: "Swiss Alps",
@@ -33,23 +33,23 @@ export default function CarouselCards() {
       },
       {
         name: "Cairo",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/elcairo-egipto.jpg?alt=media&token=12fd3990-e930-4adf-8522-236ff0e22937'
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/Elcairo.jpeg?alt=media&token=9678948e-e776-4176-b4cf-bb8907c70b72'
+      },
+      {
+        name: "Santorini",
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/santorini.webp?alt=media&token=0037c5a4-9527-4ad8-b1e8-7a3e03d70c09'
       },
       {
         name: "Barcelona",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/barcelona-espa%C3%B1a.jpg?alt=media&token=90e6164f-95da-4f03-8f28-af315eacd721'
-      },
-      {
-        name: "Uyuni salt flat",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/salardeuyuni-bolivia.jpg?alt=media&token=9592a08f-fbed-4a86-96c5-d3eafbfc43c7'
-      },
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/Barcelona.jpg?alt=media&token=0b2e8607-5ca2-4ad5-ac01-3c44938a945b'
+      },      
       {
         name: "Kyoto",
         image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/kyoto-japon.jpg?alt=media&token=63c323d3-69c1-4bd9-b433-c7d5cfc940db'
       },
       {
-        name: "Angel falls",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/canaima-venezuela.jpg?alt=media&token=014a7bd9-c297-4990-83f4-3e33470a0786'
+        name: "Canaima",
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/canaima.jpg?alt=media&token=9661551a-b9ea-430a-8b48-819cdc2af8eb'
       },
       {
         name: "London",
@@ -57,7 +57,7 @@ export default function CarouselCards() {
       },
       {
         name: "Cancun",
-        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/cancun-mexico.jpg?alt=media&token=346a343c-64d6-4934-be99-de870d20458b'
+        image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/cancun.webp?alt=media&token=c3688077-7317-4c1f-98f5-9692026deef3'
       },
       {
         name: "Paris",

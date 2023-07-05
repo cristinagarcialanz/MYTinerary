@@ -38,8 +38,9 @@ function CityDetail() {
                 <h1 className="card-detail-title">{city[0].name}</h1>
                 <h2 className="card-detail-caption">{city[0].country}</h2>
                 <p clasNames="card-detail-desc">{city[0].description}</p>
-                <p clasNames="card-detail-desc">{city[0].longDescription}</p>
+                <p clasNames="card-detail-desc">{city[0].longDescription}</p>                
                 <div className="card-detail-amount">
+                  <p className="card-detail-amount-total"> Population: {city[0].population}</p>
                   <p className="card-detail-amount-total"> Price $ {city[0].price}</p>
                 </div>
                 <div className='containerItinerary'>
