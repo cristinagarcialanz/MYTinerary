@@ -15,7 +15,7 @@ function CityDetail() {
     let cityDB
     cityDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities/' + id);
     setCity(cityDB.data.response);
-    console.log(id)
+    
   }
 
   useEffect(() => {
@@ -37,8 +37,8 @@ function CityDetail() {
               <div className="card-detail">
                 <h1 className="card-detail-title">{city[0].name}</h1>
                 <h2 className="card-detail-caption">{city[0].country}</h2>
-                <p clasNames="card-detail-desc">{city[0].description}</p>
-                <p clasNames="card-detail-desc">{city[0].longDescription}</p>                
+                <p className="card-detail-desc">{city[0].description}</p>
+                <p className="card-detail-desc">{city[0].longDescription}</p>                
                 <div className="card-detail-amount">
                   <p className="card-detail-amount-total"> Population: {city[0].population}</p>
                   <p className="card-detail-amount-total"> Price $ {city[0].price}</p>

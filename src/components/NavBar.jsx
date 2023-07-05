@@ -105,10 +105,10 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' }, color:"primary"
               }}
             >
-              {pages.map((page, index) => (
+              {pages.map((page) => (
 
-                <LinkRouter className='LinkRouter' to={page.path}>
-                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                <LinkRouter className='LinkRouter' to={page.path} key={page.id} >
+                  <MenuItem onClick={handleCloseNavMenu} key={page.id}>
                     <Typography textAlign="center" color='white'> {page.icon}{page.name}</Typography>
                   </MenuItem>
                 </LinkRouter>
@@ -142,11 +142,11 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, width:'50%'}}>
-            {pages.map((page, index) => (
+            {pages.map((page) => (
 
-              <LinkRouter className='LinkRouter' to={page.path}>
+              <LinkRouter className='LinkRouter' to={page.path} key={page.id}>
                 <Button
-                  key={index}
+                  
                   onClick={handleCloseNavMenu}  
                   fontSize='30px'
                   sx={{ my: 2, color: 'white', display: 'block' }}

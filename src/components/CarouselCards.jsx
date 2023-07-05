@@ -101,8 +101,8 @@ export default function CarouselCards() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >   
-          {cities.map(city=>
-            <SwiperSlide><img src={city.image} alt={city.name} /><div className="slide-caption">{city.name}</div></SwiperSlide>
+          {cities.map((city,index)=>
+            <SwiperSlide key={index}><img src={city.image} alt={city.name} /><div className="slide-caption">{city.name}</div></SwiperSlide>
           )
           
           }

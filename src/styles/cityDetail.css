@@ -65,9 +65,8 @@
 .card-detail-desc {
   font-size: 1rem;
   font-family: "Open sans", sans-serif;
-  /*to adjust the spacing the next line*/
   line-height: 1.5;
-  color: #bcbcbc;
+  color: #000000;
 }
 
 .card-detail-amount{
