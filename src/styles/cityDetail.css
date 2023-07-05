@@ -25,6 +25,7 @@
   overflow: hidden;
   background-color: white;
   padding: 16px;
+  flex-wrap: wrap;
 }
 
 .card-image-container {

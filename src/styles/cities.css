@@ -1,3 +1,7 @@
+html,
+body {
+  scroll-behavior: smooth !important;
+}
 .containCities{
   display: flex;
   flex-direction: column;
