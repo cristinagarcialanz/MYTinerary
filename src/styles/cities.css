@@ -11,7 +11,7 @@
   justify-content: flex-end;
 }
 .containCities input{
-  width: 20%;
+  min-width: 20%;
   padding: .8rem;
   border-radius: 50px;
   border: 2px solid #ffa100;
@@ -39,7 +39,9 @@
 }
 
 .cardCities{
-  width: 21%;
+  min-width: 20%;
+  /* max-width: 21%; */
+  margin: .5rem 1rem;
   
 }
 .cardCities .css-46bh2p-MuiCardContent-root{

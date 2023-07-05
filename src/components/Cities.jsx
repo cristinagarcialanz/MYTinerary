@@ -106,7 +106,7 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                   alt="Ciudad"
                 />
                 <CardContent>
-                  <Typography variant="body2" color="text.secondary" padding="0.7rem">
+                  <Typography variant="body2" color="text.secondary" padding="0.7rem" height="4rem">
                     {city.description}
                   </Typography>
                 </CardContent>
