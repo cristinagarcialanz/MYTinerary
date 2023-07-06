@@ -16,7 +16,7 @@ Las desarrolladoras del Proyecto son:
 - ***npm install cors***
 - ***npm run dev***
 
-## Lista de Comandos node para Backend.
+## Lista de Comandos node para Frontend.
 - ***npx create-react-app mytinerary***
 - ***npm react-router-dom***
 - ***npm install axios***
