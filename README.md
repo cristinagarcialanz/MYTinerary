@@ -7,6 +7,32 @@ Las desarrolladoras del Proyecto son:
 - **Àvila Yendar**
 - **Marquez Carolina** 
 
+# Lista de Comandos node para Backend.
+- ***npm install node***
+- ***npm install express***
+- ***npm install nodemon***
+- ***npm install mongoose***
+- ***npm install axios***
+- ***npm install cors***
+- ***npm run dev***
+
+# Lista de Comandos node para Backend.
+- ***npx create-react-app mytinerary***
+- ***npm react-router-dom***
+- ***npm install axios***
+- ***npm install react-spinners***
+- ***npm install icons-material***
+- ***npm start***
+  
+## Lista de las tecnologías utilizadas.
+- ***JSX***
+- ***CSS***
+- ***React***
+- ***Mui***
+- ***Swiper***
+- ***POSTMAN***
+- ***MONGO***
+- ***Render***
 
 ## SPRING 1: Componantes, Ciclos, Rutas 
 
