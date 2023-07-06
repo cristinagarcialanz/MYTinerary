@@ -15,7 +15,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 
 function Cities() {
@@ -35,8 +34,6 @@ function Cities() {
     console.log(error);
   }
 }
-    
-  
 
   useEffect(() => {
     getData()

@@ -35,6 +35,7 @@
   width: 47%;
   max-height: 80vh;  
   min-width: 18rem;
+  
 }
 
 .card-image {
@@ -50,6 +51,7 @@
   /*take full width of the second half*/
   width: 47%;
   min-width: 18rem;
+  padding-top: 1rem;
 }
 
 .card-detail-caption {
@@ -131,8 +133,13 @@
   transform: scale(1.1);
 }
 
-
 .card-detail-amount {
   display: inline-flex;
   align-items: center;
+}
+
+.tituloAvatar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
