@@ -7,7 +7,7 @@ Las desarrolladoras del Proyecto son:
 - **Àvila Yendar**
 - **Marquez Carolina** 
 
-# Lista de Comandos node para Backend.
+## Lista de Comandos node para Backend.
 - ***npm install node***
 - ***npm install express***
 - ***npm install nodemon***
@@ -16,7 +16,7 @@ Las desarrolladoras del Proyecto son:
 - ***npm install cors***
 - ***npm run dev***
 
-# Lista de Comandos node para Backend.
+## Lista de Comandos node para Backend.
 - ***npx create-react-app mytinerary***
 - ***npm react-router-dom***
 - ***npm install axios***
