@@ -146,7 +146,7 @@ function NavBar() {
 
               <LinkRouter className='LinkRouter' to={page.path} key={page.id}>
                 <Button
-                  
+                  className='linkNavBar'
                   onClick={handleCloseNavMenu}  
                   fontSize='30px'
                   sx={{ my: 2, color: 'white', display: 'block' }}
