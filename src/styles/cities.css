@@ -146,8 +146,8 @@ transform: translateY(-3px);
   border-radius: 50px;
   background: linear-gradient(to top,#F1C933 10%,rgba(229,229,229,0) 90%);
   position: relative;
-  animation: spin 0.6s linear reverse infinite;
-  -webkit-animation: spin 0.8s linear reverse infinite;
+  animation: spin 1.2s linear reverse infinite;
+  -webkit-animation: spin 1.2s linear reverse infinite;
 }
 
 .plane-spinner::before {
