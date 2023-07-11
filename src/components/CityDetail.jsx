@@ -50,16 +50,18 @@ function CityDetail() {
                   <p className="card-detail-amount-total"> Population: {city[0].population}</p>
                   <p className="card-detail-amount-total"> Price $ {city[0].price}</p>
                 </div>
-                <div className='containerItinerary'>
+                {/* <div className='containerItinerary'>
                   <button className="card-detail-buttonItinerary"> Itinerary 1</button>
                   <button className="card-detail-buttonItinerary"> Itinerary 2</button>
                   <button className="card-detail-buttonItinerary"> Itinerary 3</button>
-                </div>
-                <button className="card-detail-button"> Reservation</button>
+                </div> */}
+                {/* <button className="card-detail-button"> Reservation</button> */}
               </div>
             </section>
-
-            <section>
+                <div className='titleItinerary'>
+                  <h2 className='itinerariesTitle'>Itineraries</h2>
+                </div>
+            <section className='cardItinerary'>
               <Itineraries />
             </section>
           </div>

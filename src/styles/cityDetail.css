@@ -150,3 +150,18 @@ justify-content: space-between;
   align-items: center;
   justify-content: center;
 }
+
+.titleItinerary {
+ width: 100%;
+}
+
+.itinerariesTitle{
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+ background-color: #ffa100;
+  width: 20%;
+  border-radius: 0 3rem 3rem 0;
+}
