@@ -143,3 +143,10 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
+
+.container-cityDetail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

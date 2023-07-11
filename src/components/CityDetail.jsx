@@ -1,11 +1,13 @@
 import '../styles/cityDetail.css';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Avatar from '@mui/material/Avatar';
+import Itineraries from './Itineraries';
 import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link as LinkRouter } from "react-router-dom";
+
 
 function CityDetail() {
 
@@ -21,7 +23,7 @@ function CityDetail() {
 
   useEffect(() => {
     getCity(id);
-  }, [])
+  },[])
 
 
   return (
@@ -30,7 +32,7 @@ function CityDetail() {
       <LinkRouter className='backCities' to={'/Cities'}><ArrowBackIcon />Cities</LinkRouter>
       {
         city.length > 0 ?
-          <div>
+          <div className='container-cityDetail'>
             <section className="card">
               <div className="card-image-container">
                 <img className="card-image" src={city[0].image} alt="Imagen Detalle" />
@@ -55,6 +57,10 @@ function CityDetail() {
                 </div>
                 <button className="card-detail-button"> Reservation</button>
               </div>
+            </section>
+
+            <section>
+              <Itineraries />
             </section>
           </div>
           :

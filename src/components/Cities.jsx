@@ -122,7 +122,7 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                 </CardActions>              
                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <LinkRouter to={'/CityDetail/' + city._id} className='explore'>                
-                 <button className="explore-button">Explore More</button>
+                <button className="explore-button">Explore More</button>
                       </LinkRouter>
                   </div>
               
