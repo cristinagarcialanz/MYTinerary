@@ -1,6 +1,6 @@
 .cardItinerary{
     width: 90%;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 ;
   
   }
   .cardItineraries{
@@ -20,22 +20,45 @@
   }
 .imageCardMedia{
     width: 50% !important;
+    border-radius: 15px;
 }
 .viewPrincipal{
     display: flex;
     flex-direction: row;
 }
-
-.buttonExpand{
+.titleItineries{
+  font-size: 1.5rem !important;
+  padding-bottom: 1rem;
+}
+.iconsItinaries .buttonExpand{
     display: flex;
     flex-direction: row;
     background-color: orange;
     border-radius: 15px;
     padding: 0 0 0 .5rem;
+    align-items: center;
+   justify-content: flex-end !important;
 }
 .iconsItinaries{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start !important;
+    ;
+}
+.iconsItinaries div{
+  display: flex;
+  align-items: center;
+}
+.iconsItinaries div img{
+  padding: .5rem;
+}
+.cardCarouselItinerary{
+  width: 100%;
+}
+.cardCarouselItinerary .cardCarouselItineraries{
+  width: 50%;
+  padding: 0;
+}
+.viewPrincipal .css-46bh2p-MuiCardContent-root:last-child{
+  padding: 1rem 1rem 0;
 }
