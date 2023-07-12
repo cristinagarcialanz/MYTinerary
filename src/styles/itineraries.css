@@ -28,12 +28,14 @@
 }
 .titleItineries{
   font-size: 1.5rem !important;
-  padding-bottom: 1rem;
+  margin-bottom: .5rem !important;
+  color: white;
+  background-color: #ffa100;
 }
 .iconsItinaries .buttonExpand{
     display: flex;
     flex-direction: row;
-    background-color: orange;
+    background-color: #ffa100;
     border-radius: 15px;
     padding: 0 0 0 .5rem;
     align-items: center;

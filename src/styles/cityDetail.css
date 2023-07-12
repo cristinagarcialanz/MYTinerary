@@ -31,7 +31,7 @@
 }
 
 .card-image-container {
-  /*to divide the card into equal halves*/
+
   width: 47%;
   max-height: 80vh;  
   min-width: 18rem;
@@ -39,7 +39,7 @@
 }
 
 .card-image {
-  /*take full width of the first half*/
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -47,8 +47,7 @@
 }
 
 .card-detail {
-  /* padding: 0.2rem;   */
-  /*take full width of the second half*/
+
   width: 47%;
   min-width: 18rem;
   padding-top: 1rem;
@@ -112,24 +111,6 @@
 .card-detail-buttonItinerary:hover{
   border: 2px solid #fbae28;
   background: #fbae28;
-  transform: scale(1.1);
-}
-
-.card-detail-button {
-  /*there is no need to apply text align here*/
-  display: block;
-  padding: 0.8rem;
-  border: none;
-  color: #fff;  
-  min-width: 10vw;
-  border-radius: 0.5rem;
-  background-color: green;
-  transition: transform 0.3s ease;
-}
-
-.card-detail-button:hover{
-  border: 2px solid rgb(23, 133, 23);
-  background: rgb(0, 78, 0);
   transform: scale(1.1);
 }
 
