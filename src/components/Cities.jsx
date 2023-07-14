@@ -21,7 +21,7 @@ function Cities() {
 
   const [cities, setCities] = useState([])
   const [searchTerm, setSearchTerm] = useState('');
-  const [favorites, setFavorites] = useState([]);
+  // const [favorites, setFavorites] = useState([]);
   let citiesDB
 
   async function getData() {
@@ -46,15 +46,15 @@ const filteredCitiesByName = cities.filter((city) =>
 );
 const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length === 0;
 
-const handleFavoriteClick = (cityId) => {
-  if (favorites.includes(cityId)) {
-    setFavorites(favorites.filter((id) => id !== cityId));
-  } else {
-    setFavorites([...favorites, cityId]);
-  }
-};
+// const handleFavoriteClick = (cityId) => {
+//   if (favorites.includes(cityId)) {
+//     setFavorites(favorites.filter((id) => id !== cityId));
+//   } else {
+//     setFavorites([...favorites, cityId]);
+//   }
+// };
 
-const isFavorite = (cityId) => favorites.includes(cityId);
+// const isFavorite = (cityId) => favorites.includes(cityId);
 
 
   return (
@@ -88,13 +88,12 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                     </Avatar>
                   }
                   action={
-                    <IconButton aria-label="settings">
-                      <MoreVertIcon />
+                    <IconButton aria-label="share" className='share'>
+                      <ShareIcon />
                     </IconButton>
                   }
                   title={city.name}
                   subheader={city.country}
-                //subheader={city.description}
                 />
                 <CardMedia
                   component="img"
@@ -109,13 +108,13 @@ const isFavorite = (cityId) => favorites.includes(cityId);
                 </CardContent>
                 <div className='selects'>
                   <CardActions disableSpacing>
-                  <IconButton
+                  {/* <IconButton
                       className={isFavorite(city._id) ? 'favorite favorite-icon' : 'favorite'}
                       aria-label="add to favorites"
                       onClick={() => handleFavoriteClick(city._id)}
                     >
                     <FavoriteIcon />
-                  </IconButton>
+                  </IconButton> */}
                   <IconButton aria-label="share" className='share'>
                     <ShareIcon />
                   </IconButton>

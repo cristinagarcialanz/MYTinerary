@@ -61,9 +61,9 @@ function CityDetail() {
 
             <section className='cardItinerary'>
               
-              id == itinerary.cityID ? 
-              <Itineraries />
-              : 
+              
+              <Itineraries/>
+              
               
 
             </section>
