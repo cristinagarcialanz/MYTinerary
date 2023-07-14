@@ -18,6 +18,23 @@ body {
   padding: 0;
 }
 
+/* prefixer para Chrome*/
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #ffa100;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: beige;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color:  #1900fd;
+}
+::-webkit-scrollbar-thumb :hover {
+  background-color: burlywood;
+}
+
 .slogan {
   display: flex;
   justify-content: center !important;

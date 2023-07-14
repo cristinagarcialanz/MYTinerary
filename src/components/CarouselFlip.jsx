@@ -11,10 +11,11 @@ import "swiper/css/autoplay";
 import { EffectFlip, Pagination, Navigation, Autoplay } from 'swiper';
 
 export default function CarouselFlip() {
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time) => {
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;}
-  const cities = [
+  // const progressContent = useRef(null);
+  // const onAutoplayTimeLeft = (s, time) => {
+  //   progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;}
+  
+    const cities = [
     {
       name: "Ushuaia",
       image: 'https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/Ushuaia.webp?alt=media&token=99f5af8e-5f82-4ba4-a522-44583fda7540'

@@ -9,14 +9,14 @@
     justify-content: center;
     display: flex;
     flex-direction: column ;
-     border-radius: 20px !important;
+    border-radius: 20px !important;
   }
   .cardItineraries:hover{
     box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
   transform: translateY(-3px);
-   
+  
   }
 .imageCardMedia{
     width: 50% !important;
@@ -39,7 +39,7 @@
     border-radius: 15px;
     padding: 0 0 0 .5rem;
     align-items: center;
-   justify-content: flex-end !important;
+    justify-content: flex-end !important;
 }
 .iconsItinaries{
     display: flex;

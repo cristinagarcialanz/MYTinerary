@@ -31,18 +31,19 @@ const ExpandMore = styled((props) => {
 
 export default function Itineraries() {
 
-  const [city, setCity] = useState([]);
+  const [itineraries, setItinerary] = useState([]);
+  console.log(itineraries)
   const { id } = useParams()
 
-  async function getCity(id) {
-    let cityDB
-    cityDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities/' + id);
-    setCity(cityDB.data.response);
+  async function getItinerary(id) {
+    let itineraryDB
+    itineraryDB = await axios.get('https://cristina-api-itineraries-crud.onrender.com/api/itineraries/' + id);
+    setItinerary(itineraryDB.data.response);
 
   }
 
   useEffect(() => {
-    getCity(id);
+    getItinerary(id);
   },[])
 
   const [expanded, setExpanded] = React.useState(false);
@@ -60,37 +61,26 @@ export default function Itineraries() {
         image="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Fushuaia%2Fitinerary2%2Fcaption%20(2).jpg?alt=media&token=5ccd9ecd-b901-435b-871d-ba6663ea113a"
         alt="Paella dish"
       />
-      <CardContent className='cardContentItinerary'>
+      <CardContent>
       <CardHeader
         avatar={
           <Avatar src='https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ffotos%20de%20perfil%2FFotograf%C3%ADa-para-CV-en-Madrid.jpg?alt=media&token=89f57c8b-c0a9-4122-bfc5-1894590b7e2c' sx={{ bgcolor: red[400] }} aria-label="recipe">
             </Avatar>
-            
         }
-        action={
-         <IconButton  aria-label="add to favorites">
-          <FavoriteIcon /> 0
-        </IconButton>
-        }
-        title="Carmela Sans"
-        
-        
+        title={itineraries.autor}
+        subheader="Trakking"
       />
-        <Typography className='titleItineries'>Trakking</Typography>
         <Typography variant="body2" color="text.secondary">
         Get a comprehensive tour of the Blue Mountains region from Sydney, with all activities and transport included. This tour makes embarking on this jam-packed day easy. With a small group of just 21 people or fewer, get views of Jamison Valley and the Three Sisters, and then visit Scenic World and Featherdale Wildlife Park. Lunch and a drink are included before you return to Sydney by ferry.
         </Typography>
          <CardActions disableSpacing className='iconsItinaries'>
-        
+        <IconButton  aria-label="add to favorites">
+          <FavoriteIcon />0
+        </IconButton>
           <div className='iconsItinaries'>
             <div>Price: <img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fbillete-de-un-dolar.png?alt=media&token=4b6435c1-30f1-4c8e-a248-9e86235e7a85" alt="dollar" width="35px"/></div>
-            <div><img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fzona-horaria.png?alt=media&token=6c65e432-30e1-4d7e-9f39-d450bb7b7d09" alt="dollar" width="35px"/>3Hs.</div>
-            <div>
-              <ul>
-                <li><a href=''>#travel</a></li>
-              </ul>
-              </div>
-          </div>
+        <div><img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fzona-horaria.png?alt=media&token=6c65e432-30e1-4d7e-9f39-d450bb7b7d09" alt="dollar" width="35px"/>3Hs.</div>
+        <div><ul><li>#travel</li></ul></div></div>
           
           
         <div className='buttonExpand'>
@@ -108,16 +98,13 @@ export default function Itineraries() {
        
       </CardActions>
       
+     
+      
       </CardContent>
         </div>
-      <Collapse in={expanded} timeout="auto" unmountOnExit className='cardCarouselItinerary'>
-        <div className='titleItinerary'>
-                  <h2 className='itinerariesTitle'>Let's Explore</h2>
-                  
-          </div>
-        <CardContent className='cardCarouselItineraries'>
-          
-        <CarouselFlip />
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <CarouselFlip />
 
         </CardContent>
       </Collapse>

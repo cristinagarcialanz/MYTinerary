@@ -17,13 +17,15 @@ function CityDetail() {
   async function getCity(id) {
     let cityDB
     cityDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities/' + id);
+    
+
     setCity(cityDB.data.response);
 
   }
 
   useEffect(() => {
     getCity(id);
-  },[])
+  }, [])
 
 
   return (
@@ -48,22 +50,24 @@ function CityDetail() {
                 <p className="card-detail-desc">{city[0].longDescription}</p>
                 <div className="card-detail-amount">
                   <p className="card-detail-amount-total"> Population: {city[0].population}</p>
-                  <p className="card-detail-amount-total"> Price $ {city[0].price}</p>
                 </div>
-                {/* <div className='containerItinerary'>
-                  <button className="card-detail-buttonItinerary"> Itinerary 1</button>
-                  <button className="card-detail-buttonItinerary"> Itinerary 2</button>
-                  <button className="card-detail-buttonItinerary"> Itinerary 3</button>
-                </div> */}
-                {/* <button className="card-detail-button"> Reservation</button> */}
+
               </div>
             </section>
-                <div className='titleItinerary'>
-                  <h2 className='itinerariesTitle'>Itineraries</h2>
-                </div>
+
+            <div className='titleItinerary'>
+              <h2 className='itinerariesTitle'>Itineraries</h2>
+            </div>
+
             <section className='cardItinerary'>
+              
+              id == itinerary.cityID ? 
               <Itineraries />
+              : 
+              
+
             </section>
+
           </div>
           :
           <div>

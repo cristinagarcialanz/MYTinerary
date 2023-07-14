@@ -1,4 +1,4 @@
-.backCities{
+.backCities {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,34 +8,36 @@
   font-size: 1rem;
   border-radius: 50px;
   border: 2px solid #ffa100;
-  background: #ffa100;  
+  background: #ffa100;
   max-width: 5rem;
   margin: 1rem 0 0 1rem;
   transition: transform 0.3s ease;
 }
-.backCities:hover{
+
+.backCities:hover {
   border: 2px solid #fbae28;
   background: #fbae28;
   transform: scale(1.1);
 }
+
 .card {
-  display: flex;  
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;  
-  max-width: 100%;  
+  justify-content: space-around;
+  max-width: 100%;
   margin: 0;
   overflow: hidden;
   background-color: white;
-  padding: 0.7rem 0;  
+  padding: 0.7rem 0;
 }
 
 .card-image-container {
 
   width: 47%;
-  max-height: 80vh;  
+  max-height: 80vh;
   min-width: 18rem;
-  
+
 }
 
 .card-image {
@@ -70,7 +72,7 @@
   color: #000000;
 }
 
-.card-detail-amount{
+.card-detail-amount {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -80,7 +82,7 @@
 .card-detail-amount-total {
   font-size: 1.3rem;
   margin-right: 1rem;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .card-detail-amount-prev-total {
@@ -90,13 +92,13 @@
   font-family: "Open sans", sans-serif;
 }
 
-.containerItinerary{
+.containerItinerary {
   display: flex;
   flex-direction: row;
   padding: 0.7rem;
 }
 
-.card-detail-buttonItinerary{
+.card-detail-buttonItinerary {
   margin: 0.7rem;
   padding: 0.8rem;
   border: none;
@@ -108,7 +110,7 @@
   transition: transform 0.3s ease;
 }
 
-.card-detail-buttonItinerary:hover{
+.card-detail-buttonItinerary:hover {
   border: 2px solid #fbae28;
   background: #fbae28;
   transform: scale(1.1);
@@ -119,13 +121,13 @@
   align-items: center;
 }
 
-.tituloAvatar{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.tituloAvatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.container-cityDetail{
+.container-cityDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,16 +135,16 @@ justify-content: space-between;
 }
 
 .titleItinerary {
- width: 100%;
+  width: 100%;
 }
 
-.itinerariesTitle{
+.itinerariesTitle {
   display: flex;
   justify-content: center;
   padding: 1.2rem 0;
   color: #ffffff;
   font-size: 1.5rem;
- background-color: #ffa100;
+  background-color: #ffa100;
   width: 20%;
   border-radius: 0 3rem 3rem 0;
 }
