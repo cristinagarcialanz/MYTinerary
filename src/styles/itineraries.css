@@ -1,5 +1,5 @@
 .cardItinerary{
-    width: 90%;
+    width: 90%; 
     padding: 1.5rem 0 0;
   
   }
@@ -35,12 +35,14 @@
 }
 .iconsItinaries .buttonExpand{
     display: flex;
+    width: auto;
     flex-direction: row;
     background-color: #ffa100;
     border-radius: 15px;
     padding: 0 0 0 .5rem;
     align-items: center;
     justify-content: flex-end !important;
+
 }
 .iconsItinaries{
     display: flex;
@@ -49,6 +51,7 @@
     ;
 }
 .iconsItinaries div{
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -66,6 +69,36 @@
   padding: 1rem 1rem 0;
 }
 .messageNoFound{
-  font-size: 3rem;
-  color: blue !important;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  color: #ffa100;
+  padding-top: 0;
+}
+.messageNoFound img{
+  width: 20%;
+}
+
+
+.hashtags{
+  width: 100%;
+}
+.hashtags ul{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.hashtags ul li{
+  list-style: none;
+  padding: 0;
+  color:#ffa100
+}
+.hashtags ul li:hover{
+  color: blue;
+  cursor: pointer;
+}
+.favorite-icon {
+  color: #ffa100!important;
 }

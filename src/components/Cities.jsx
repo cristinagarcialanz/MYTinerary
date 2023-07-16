@@ -11,17 +11,14 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchCities from './SearchCities';
 
 function Cities() {
 
   const [cities, setCities] = useState([])
   const [searchTerm, setSearchTerm] = useState('');
-  // const [favorites, setFavorites] = useState([]);
   let citiesDB
 
   async function getData() {
@@ -38,42 +35,19 @@ function Cities() {
   useEffect(() => {
     getData()
   }, [])
-  
-
-
 const filteredCitiesByName = cities.filter((city) =>
   city.name.toLowerCase().includes(searchTerm.toLowerCase())
 );
 const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length === 0;
 
-// const handleFavoriteClick = (cityId) => {
-//   if (favorites.includes(cityId)) {
-//     setFavorites(favorites.filter((id) => id !== cityId));
-//   } else {
-//     setFavorites([...favorites, cityId]);
-//   }
-// };
-
-// const isFavorite = (cityId) => favorites.includes(cityId);
-
-
   return (
     <div className='containCities'>
-      <div className='inputSearch'>
-        <input
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Search cities"
-      />
-      <SearchIcon />
-      </div>
-      
-    
+      <SearchCities searchTerm={searchTerm} onSearchTermChange={setSearchTerm} />
+
     <div className='in-construction'>
       
       {showNoResultsMessage ? (
-          <div className='messageNoFound'>No destinations found</div>
+          <div className='messageNoFound'>No destinations found <img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Fsearch%20(2).gif?alt=media&token=0a5ce9da-7e7a-4f14-ba62-58eedd311486" alt='' /></div>
         ) :
       
       filteredCitiesByName.length > 0 ?(
@@ -108,13 +82,6 @@ const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length ==
                 </CardContent>
                 <div className='selects'>
                   <CardActions disableSpacing>
-                  {/* <IconButton
-                      className={isFavorite(city._id) ? 'favorite favorite-icon' : 'favorite'}
-                      aria-label="add to favorites"
-                      onClick={() => handleFavoriteClick(city._id)}
-                    >
-                    <FavoriteIcon />
-                  </IconButton> */}
                   <IconButton aria-label="share" className='share'>
                     <ShareIcon />
                   </IconButton>
@@ -124,15 +91,9 @@ const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length ==
                 <button className="explore-button">Explore More</button>
                       </LinkRouter>
                   </div>
-              
                 </div>
-                
-                
               </Card>
-          
           </div>
-          
-          
           )))
         :(
   <div>
@@ -145,7 +106,7 @@ const showNoResultsMessage = searchTerm !== '' && filteredCitiesByName.length ==
   </div>
 
 )}
-<a href="#" className="subir"><KeyboardArrowUpIcon /></a>
+<a href=" " className="subir"><KeyboardArrowUpIcon /></a>
     </div >
     </div >
     

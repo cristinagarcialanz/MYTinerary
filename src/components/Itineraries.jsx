@@ -9,7 +9,6 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CarouselFlip from './CarouselFlip';
 import '../styles/itineraries.css';
@@ -78,7 +77,10 @@ export default function Itineraries() {
     <>
      {itineraries.length === 0 ? (
 
-      <div className="messageNoFound">Itinerary under construction</div>
+      <div className="messageNoFound">
+        <h3>Itinerary under construction...</h3>
+        <img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Frecurring-settings.gif?alt=media&token=f0cf26e3-f677-4bf0-91ec-647c54841644" alt="" />
+        </div>
      ) : ( 
     
     itineraries.map((itinerary) => (
@@ -120,7 +122,13 @@ export default function Itineraries() {
           ))} </div>   
               
         <div><img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fzona-horaria.png?alt=media&token=6c65e432-30e1-4d7e-9f39-d450bb7b7d09" alt="dollar" width="35px"/>{itinerary.duration}</div>
-        <div><ul><li>{itinerary.hashtags}</li></ul></div></div>         
+        <div className='hashtags'>
+          <ul>
+            {itinerary.hashtags.map((hashtag, index) => (
+              <li key={index}>{hashtag}</li>
+            ))}
+          </ul>
+        </div>    
           
         <div className='buttonExpand'>
           <p>Explore More</p>
@@ -134,6 +142,7 @@ export default function Itineraries() {
           <ExpandMoreIcon />
         </ExpandMore>
         </div>
+        </div>
        
       </CardActions>
       </CardContent>
@@ -145,7 +154,7 @@ export default function Itineraries() {
           </div>
         <CardContent className='cardCarouselItineraries'>
 
-        <CarouselFlip />
+        <CarouselFlip images={itinerary.image} />
 
         </CardContent>
       </Collapse>

@@ -90,6 +90,9 @@ transform: translateY(-3px);
   font-size: 2rem;
   color: #ffa100;
 }
+.messageNoFound img{
+  width: 15% !important;
+}
 
 /* LOADING*/
 .core-page-loader {
@@ -234,6 +237,4 @@ transform: translateY(-3px);
 .share:hover{
   color: rgb(11, 224, 75) !important;
 }
-.favorite-icon {
-  color: red !important;
-}
+
