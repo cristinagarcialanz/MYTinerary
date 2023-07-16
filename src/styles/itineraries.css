@@ -20,8 +20,7 @@
   
   }
 .imageCardMedia{
-    width: 40% !important;
-    border-radius: 15px;
+    width: 50% !important;    
 }
 .viewPrincipal{
     display: flex;
@@ -32,6 +31,7 @@
   margin-bottom: .5rem !important;
   color: white;
   background-color: #ffa100;
+  text-align: center;
 }
 .iconsItinaries .buttonExpand{
     display: flex;
@@ -79,7 +79,6 @@
   width: 20%;
 }
 
-
 .hashtags{
   width: 100%;
 }
@@ -93,12 +92,27 @@
 .hashtags ul li{
   list-style: none;
   padding: 0;
-  color:#ffa100
+  color:#f19100
 }
 .hashtags ul li:hover{
   color: blue;
   cursor: pointer;
 }
-.favorite-icon {
-  color: #ffa100!important;
+.favorite-icon {  
+  color: blue!important;
 }
+
+.css-w36qm6-MuiTypography-root{
+  font-size: 1.2rem !important;
+}
+
+.css-sgoict-MuiCardHeader-action{
+  align-self: center !important;
+}
+
+.cardContentItinerary .css-185gdzj-MuiCardHeader-root{
+  align-items: center;
+  padding: 0 !important;
+  padding-bottom: 0.5rem !important;
+}
+
