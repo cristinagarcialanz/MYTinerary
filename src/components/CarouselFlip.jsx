@@ -34,8 +34,6 @@ export default function CarouselFlip({images}) {
           <div className="autoplay-progress autoplay-counter" slot="container-end"></div>
            
       </Swiper>
-    </>
-
-    
+    </> 
   );
 }

@@ -58,19 +58,23 @@ body {
   color: #fff;
   text-align: center;
   border-radius: 0 0 15px 15px;
+  
 }
 
 .navigation-button {
   position: absolute;
   top: 50%;
+  color: #ffa100;
 }
 
 .swiper-button-next {
   right: 15px;
+  color: #ffa100;
 }
 
 .swiper-button-prev {
   left: 15px;
+  color: #ffa100;
 }
 
 .autoplay-progress {
@@ -84,7 +88,9 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: var(--swiper-theme-color);
+  /* color: var(--swiper-theme-color); */
+  color: #ffa100;
+  
 }
 
 .autoplay-progress svg {
@@ -96,9 +102,13 @@ body {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
+  stroke: #ffa100;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+  
+}
+.swiper-pagination-bullet-active {
+  background-color: orange !important;
 }

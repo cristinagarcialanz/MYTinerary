@@ -33,7 +33,8 @@ function CityDetail() {
     <>
       <LinkRouter className='backCities' to={'/Cities'}><ArrowBackIcon />Cities</LinkRouter>
       {
-        city.length > 0 ?
+        // city.length > 0
+        city.length > 0 && city[0] ?
           <div className='container-cityDetail'>
             <section className="card">
               <div className="card-image-container">

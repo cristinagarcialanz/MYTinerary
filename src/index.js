@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
-
+import { configureStore } from '@reduxjs/toolkit';
+import mainReducer from './redux/reducers/mainReducer';
+import { Provider } from 'react-redux';
 const theme = createTheme({
   palette: {
     primary: {
@@ -33,12 +35,15 @@ const theme = createTheme({
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const reduxStore = configureStore({ reducer: mainReducer })
 root.render(
 
   <ThemeProvider theme={theme}>
+    <Provider store={reduxStore} >
     <BrowserRouter>    
       <App />
     </BrowserRouter>
+    </Provider>
   </ThemeProvider>
 );
 
