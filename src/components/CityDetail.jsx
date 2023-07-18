@@ -11,10 +11,9 @@ import CityDetailCard from './CityDetailCard';
 
 function CityDetail() {
   const dispatch = useDispatch();
-  // const [city, setCity] = useState([]);
   const { id } = useParams()
-  
   const city = useSelector((state) => state.detailReducer.city);
+
 
 useEffect(() => {
   dispatch(detailAction.getCity(id));
@@ -25,7 +24,6 @@ useEffect(() => {
     <>
       <LinkRouter className='backCities' to={'/Cities'}><ArrowBackIcon />Cities</LinkRouter>
       {
-        // city.length > 0
         city.length > 0 &&  city[0] ?
           <div className='container-cityDetail'>
             <CityDetailCard city={city[0]} />

@@ -13,6 +13,7 @@ function Cities() {
   let searchResult = useSelector(store => store.citiesReducer.searchResult)
   const cities = useSelector(store=>store.citiesReducer.cities)
   const [filteredCities, setFilteredCities] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
 
   useEffect(() => {
@@ -27,7 +28,11 @@ useEffect(() => {
   }
 }, [searchResult, cities]);
 
-  const showNoResultsMessage = searchResult.length === 0;
+useEffect(() => {
+  setIsLoading(cities.length === 0);
+}, [cities]);
+
+  const showNoResultsMessage = searchResult.length === 0 && !isLoading;
   
   return (
     <div className='containCities'>
@@ -44,6 +49,7 @@ useEffect(() => {
             )))
             : (
               <div>
+                
                 <div className="core-page-loader splash">
                   <div className="plane-spinner">
                     <div className="spinner-plane">
