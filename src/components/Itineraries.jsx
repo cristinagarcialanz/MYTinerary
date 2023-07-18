@@ -12,10 +12,10 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CarouselFlip from './CarouselFlip';
 import '../styles/itineraries.css';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import { useEffect } from 'react';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import { addFavorite, removeFavorite, getItineraries } from '../redux/actions/itinerariesActions';
+import { useDispatch, useSelector } from "react-redux";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -28,50 +28,72 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function Itineraries() {
+const Itineraries =({ cityId }) => {
 
-  const [itineraries, setItinerary] = useState([]);
-
-  const { id } = useParams()
-  const [favorites, setFavorites] = useState([]);
-
-  async function getItinerary(cityID) {
-    try {
-
-      let itineraryDB
-
-      itineraryDB = await axios.get('https://cristina-api-itineraries-crud.onrender.com/api/itineraries');
-      // {params:{cityID:cityID}}
-      console.log(itineraryDB.data.response);
-      const filteredItineraries = itineraryDB.data.response.itineraries.filter((itinerary) => itinerary.cityID === cityID);
-      setItinerary(filteredItineraries);
-
-
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  useEffect(() => {
-    getItinerary(id);
-
-  }, [id])
-
+  const dispatch = useDispatch();
+  const itineraries = useSelector((state) => state.itineraryReducer.itineraries);
+  const favorites = useSelector((state) => state.itineraryReducer.favorites);
   const [expanded, setExpanded] = React.useState(false);
+
+
+
+
+
+  // const [itineraries, setItinerary] = useState([]);
+
+  // const { id } = useParams()
+  // const [favorites, setFavorites] = useState([]);
+
+  // async function getItinerary(cityID) {
+  //   try {
+
+  //     let itineraryDB
+
+  //     itineraryDB = await axios.get('https://cristina-api-itineraries-crud.onrender.com/api/itineraries');
+  //     // {params:{cityID:cityID}}
+  //     console.log(itineraryDB.data.response);
+  //     const filteredItineraries = itineraryDB.data.response.itineraries.filter((itinerary) => itinerary.cityID === cityID);
+  //     setItinerary(filteredItineraries);
+
+
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   getItinerary(id);
+
+  // }, [id])
+
+  //const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
-  const handleFavoriteClick = (cityId) => {
-    if (favorites.includes(cityId)) {
-      setFavorites(favorites.filter((id) => id !== cityId));
+  // const handleFavoriteClick = (cityId) => {
+  //   if (favorites.includes(cityId)) {
+  //     setFavorites(favorites.filter((id) => id !== cityId));
+  //   } else {
+  //     setFavorites([...favorites, cityId]);
+  //   }
+  // };
+  const handleFavoriteClick = (itineraryId) => {
+    if (favorites.includes(itineraryId)) {
+      dispatch(removeFavorite(itineraryId));
     } else {
-      setFavorites([...favorites, cityId]);
+      dispatch(addFavorite(itineraryId));
     }
   };
 
-  const isFavorite = (cityId) => favorites.includes(cityId);
+  useEffect(() => {
+    dispatch(getItineraries(cityId));
+  }, [dispatch, cityId]);
+
+
+  //const isFavorite = (cityId) => favorites.includes(cityId);
+  const isFavorite = (itineraryId) => favorites.includes(itineraryId);
 
   return (
     <>
@@ -165,3 +187,6 @@ export default function Itineraries() {
     </>
   );
 }
+
+
+export default Itineraries;

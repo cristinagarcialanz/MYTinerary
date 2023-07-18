@@ -1,5 +1,4 @@
 const initialState = {
-  detail: [],
   city: [],
   auxDetail: [],  
 }
@@ -11,7 +10,7 @@ const detailReducer = (state = initialState, action) => {
     case "loadDetail":
       return {
         ...state,
-        detail: action.payload,
+        city: action.payload,
         
       }
     default:
