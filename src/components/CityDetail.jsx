@@ -1,31 +1,37 @@
 import '../styles/cityDetail.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
 import Avatar from '@mui/material/Avatar';
 import Itineraries from './Itineraries';
 import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link as LinkRouter } from "react-router-dom";
-
+import {useDispatch, useSelector } from "react-redux";
+import detailAction from "../redux/actions/detailAction";
 
 function CityDetail() {
 
-  const [city, setCity] = useState([]);
+  const dispatch = useDispatch()  
+  let cities = useSelector(store=>store.detailReducer.detail)
   const { id } = useParams()
-
-  async function getCity(id) {
-    let cityDB
-    cityDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities/' + id);
-    
-
-    setCity(cityDB.data.response);
-
-  }
+  const [city, setCity] = useState([]);
 
   useEffect(() => {
-    getCity(id);
-  }, [])
+    dispatch(detailAction.getCity(id))           
+}, [])
+
+useEffect(() => {
+  setCity(id);
+}, [])
+
+  // async function getCity(id) {
+  //   let cityDB
+  //   cityDB = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities/' + id);
+
+  //   setCity(cityDB.data.response);
+  // }
+
+  // 
 
 
   return (
@@ -56,16 +62,16 @@ function CityDetail() {
               </div>
             </section>
 
-            <div className='titleItinerary'>
-              <h2 className='itinerariesTitle'>Itineraries</h2>
+            <div className='titleItinerary'>             
+                <h2 className='itinerariesTitle'>Itineraries</h2>              
             </div>
 
             <section className='cardItinerary'>
-              
-              
-              <Itineraries/>
-              
-              
+
+
+              <Itineraries />
+
+
 
             </section>
 

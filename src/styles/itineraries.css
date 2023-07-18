@@ -97,11 +97,11 @@
   color:#f19100
 }
 .hashtags ul li:hover{
-  color: blue;
+  color: #1900fd;
   cursor: pointer;
 }
 .favorite-icon {  
-  color: blue!important;
+  color: #1900fd!important;
 }
 
 .css-w36qm6-MuiTypography-root{

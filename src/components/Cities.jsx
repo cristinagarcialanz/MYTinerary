@@ -28,7 +28,7 @@ useEffect(() => {
 }, [searchResult, cities]);
 
   const showNoResultsMessage = searchResult.length === 0;
-   
+  
   return (
     <div className='containCities'>
       <Search cities={cities} />
