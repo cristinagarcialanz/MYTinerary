@@ -32,6 +32,7 @@
   color: white;
   background-color: #ffa100;
   text-align: center;
+
 }
 .iconsItinaries .buttonExpand{
     display: flex;
@@ -118,6 +119,12 @@
   padding-bottom: 0.5rem !important;
 }
 
+@media (max-width: 769px) {
+  .itinerariesTitle{
+    min-width: 30%;
+  }
+}
+
 @media (max-width: 426px) {
 
   .viewPrincipal{
@@ -139,7 +146,7 @@
     width: 90%;
   }
   .itinerariesTitle{
-    min-width: 50%;
+    min-width: 60%;
   }
 }
 
@@ -152,5 +159,8 @@
   }
   .imageDolar{
     width: 22px !important;
+  }
+  .cardContentItinerary{
+    padding: .5rem !important;
   }
 }
