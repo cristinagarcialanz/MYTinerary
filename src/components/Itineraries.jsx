@@ -36,49 +36,10 @@ const Itineraries =({ cityId }) => {
   const [expanded, setExpanded] = React.useState(false);
 
 
-
-
-
-  // const [itineraries, setItinerary] = useState([]);
-
-  // const { id } = useParams()
-  // const [favorites, setFavorites] = useState([]);
-
-  // async function getItinerary(cityID) {
-  //   try {
-
-  //     let itineraryDB
-
-  //     itineraryDB = await axios.get('https://cristina-api-itineraries-crud.onrender.com/api/itineraries');
-  //     // {params:{cityID:cityID}}
-  //     console.log(itineraryDB.data.response);
-  //     const filteredItineraries = itineraryDB.data.response.itineraries.filter((itinerary) => itinerary.cityID === cityID);
-  //     setItinerary(filteredItineraries);
-
-
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   getItinerary(id);
-
-  // }, [id])
-
-  //const [expanded, setExpanded] = React.useState(false);
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
-  // const handleFavoriteClick = (cityId) => {
-  //   if (favorites.includes(cityId)) {
-  //     setFavorites(favorites.filter((id) => id !== cityId));
-  //   } else {
-  //     setFavorites([...favorites, cityId]);
-  //   }
-  // };
   const handleFavoriteClick = (itineraryId) => {
     if (favorites.includes(itineraryId)) {
       dispatch(removeFavorite(itineraryId));
@@ -92,7 +53,6 @@ const Itineraries =({ cityId }) => {
   }, [dispatch, cityId]);
 
 
-  //const isFavorite = (cityId) => favorites.includes(cityId);
   const isFavorite = (itineraryId) => favorites.includes(itineraryId);
 
   return (
@@ -106,7 +66,7 @@ const Itineraries =({ cityId }) => {
       ) : (
 
         itineraries.map((itinerary) => (
-          <Card key={itinerary._id} className='cardItineraries' sx={{ minWidth: 345 }}>
+          <Card key={itinerary._id} className='cardItineraries' sx={{ minWidth: 270 }}>
             <div className='viewPrincipal'>
               <CardMedia
                 className='imageCardMedia'
@@ -140,7 +100,7 @@ const Itineraries =({ cityId }) => {
                   <div className='iconsItinaries'>
                     <div> Price: {' '}
                       {Array(itinerary.price).fill().map((_, index) => (
-                        <img key={index} src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fbillete-de-un-dolar.png?alt=media&token=4b6435c1-30f1-4c8e-a248-9e86235e7a85"
+                        <img key={index} className='imageDolar' src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Ficonos%2Fbillete-de-un-dolar.png?alt=media&token=4b6435c1-30f1-4c8e-a248-9e86235e7a85"
                           alt="dollar" width="35px" />
                       ))} </div>
 

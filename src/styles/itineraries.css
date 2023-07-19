@@ -118,3 +118,39 @@
   padding-bottom: 0.5rem !important;
 }
 
+@media (max-width: 426px) {
+
+  .viewPrincipal{
+    flex-direction: column;
+  }
+  .viewPrincipal .imageCardMedia{
+    width: 100% !important;
+  }
+  .cardCarouselItinerary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardCarouselItinerary .cardCarouselItineraries{
+    width: 80%;
+    
+  }
+  .carouselFlip{
+    width: 90%;
+  }
+  .itinerariesTitle{
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 321px){
+  .carouselFlip{
+    max-width: 80%;
+  }
+  .css-w36qm6-MuiTypography-root{
+    font-size: 1rem !important;
+  }
+  .imageDolar{
+    width: 22px !important;
+  }
+}
