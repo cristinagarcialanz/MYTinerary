@@ -113,9 +113,9 @@ const Itineraries =({ cityId }) => {
                       </ul>
                     </div>
 
-                    <div className='buttonExpand'>
+                    <div className='buttonExpand exploreMore'>
                       <p>Explore More</p>
-                      <ExpandMore
+                      <ExpandMore 
                         expand={expanded}
                         onClick={handleExpandClick}
                         aria-expanded={expanded}

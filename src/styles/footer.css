@@ -5,7 +5,7 @@ footer {
 }
 
 .container {
-  padding: 0 2rem 1rem;
+  padding: 0 1rem 0.3rem;
 }
 
 footer .foo-row {
@@ -19,10 +19,10 @@ footer .foo-row .foo-col {
 
 footer .foo-row .foo-col h2 {
   color: #E3E3E3;
-  line-height: 40px;
-  font-size: 2rem;
+  line-height: 30px;
+  font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 footer form .f-input {
@@ -31,9 +31,9 @@ footer form .f-input {
 }
 
 footer form .f-input input {
-  width: 94%;
+  width: 84%;
   display: block;
-  padding: 1rem;
+  padding: 0.5rem;
   background: white;
   border: none;
   font-size: 1rem;
@@ -45,12 +45,12 @@ footer form .f-input input {
 footer form .f-input .hm-btn-round {
   position: absolute;
   right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
+  top: 0px;
+  transform: translateY(-50%); 
+  width: 40px !important;
+  height: 40px !important;
   border: none;
-  font-size: 1.3rem;
+  font-size: 0.3rem;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -60,11 +60,12 @@ footer .foo-row .foo-col ul {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 footer .foo-row .foo-col ul li {
   width: 50%;
-  margin: 1rem 3rem 1rem 0;
+  margin: 1rem 2rem 1rem 0;
   list-style: none;
 }
 
@@ -75,7 +76,7 @@ footer .foo-row .foo-col ul li a {
 }
 
 footer .foo-row .foo-col ul li a:hover {
-  color: #1900fd;
+  color: #bd4b00;
 }
 
 .icono-redes {
@@ -83,8 +84,8 @@ footer .foo-row .foo-col ul li a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0.5rem 0;
   background: white;
   border-radius: 50%;
@@ -96,7 +97,7 @@ footer .foo-row .foo-col ul li a:hover {
 }
 
 .icono-redes a:hover {
-  color: #1900fd;
+  color: #bd4b00;
 }
 
 .foo-copy {
@@ -104,11 +105,13 @@ footer .foo-row .foo-col ul li a:hover {
   color: #E3E3E3;
   font-size: 0.9rem;
   font-weight: 300;
+  margin: 0 0 0 3rem;
 }
 
 @media (min-width: 769px) {
   footer form .f-input .hm-btn-round {
-    right: -10px;
+    right: 0px;
+    transform: translateX(-100%) !important;
     border-radius: 0 25px 25px 0;
     width: 50px;
     height: 50px;
@@ -116,25 +119,33 @@ footer .foo-row .foo-col ul li a:hover {
 
   footer form .f-input input {
     border-radius: 0 25px 25px 0;
+    padding: 0.7rem;
   }
 
   .foo-copy {
     font-size: 0.8rem;
+    margin: 0 0 0 3rem;
   }
 }
 
 @media (max-width: 768px) {
   footer .foo-row .foo-col h2 {
     font-size: 1.5rem;
-  }
-
-  footer form .f-input .hm-btn-round {
-    right: -10px;
-    border-radius: 0 20px 20px 0;
-  }
+  }  
 
   footer form .f-input input {
+    padding: .5rem;
+    width: 100%;
+    font-size: .9rem;
+    border-radius: 0 20px 20px 0; 
+  }
+
+  footer form .f-input .hm-btn-round {    
     border-radius: 0 20px 20px 0;
+    transform: translateX(-50%) !important;
+    right: -15%;       
+    width: 40px !important;
+    height: 40px !important;
   }
 
   footer .foo-row .foo-col ul li a {
@@ -142,8 +153,8 @@ footer .foo-row .foo-col ul li a:hover {
   }
 
   .icono-redes {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .footer form .f-input input {
@@ -152,6 +163,7 @@ footer .foo-row .foo-col ul li a:hover {
 
   .foo-copy {
     font-size: 0.8rem;
+    margin: 0 0 0 3rem;
   }
 }
 
@@ -165,26 +177,26 @@ footer .foo-row .foo-col ul li a:hover {
   }
 
   .icono-redes {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .footer form .f-input input {
     padding: .5rem;
     width: 100%;
     font-size: .9rem;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;    
   }
 
   form {
     width: 120%;
   }
 
-  footer form .f-input .hm-btn-round {
-    width: 32px;
-    height: 32px;
-    right: -10%;
-    border-radius: 0 20px 20px 0;
+  footer form .f-input .hm-btn-round {       
+    right: -15%;    
+    transform: translateX(-30%) !important;
+    width: 31px !important;
+    height: 31px !important;
   }
 
   .container {
@@ -201,16 +213,30 @@ footer .foo-row .foo-col ul li a:hover {
 
   .foo-copy {
     font-size: 0.7rem;
+    margin: 0 0 0 3rem;
   }
 }
 
 @media (max-width: 376px) {
   .footer .foo-row .foo-col ul {
     justify-content: space-between;
-  }
+  }  
 }
 
 @media (max-width: 321px) {
+
+  .footer form .f-input input {
+    padding: .5rem;
+    width: 100%;
+    font-size: .8rem;
+    border-radius: 0 20px 20px 0;    
+  }
+
+  footer form .f-input .hm-btn-round {     
+  width: 31px !important;
+  height: 31px !important;  
+  }
+
   .footer .foo-row .foo-col ul {
     padding-left: 1rem;
   }
@@ -225,5 +251,6 @@ footer .foo-row .foo-col ul li a:hover {
 
   .foo-copy {
     font-size: 0.7rem;
+    margin: 0.2rem 0 0 3rem;
   }
 }

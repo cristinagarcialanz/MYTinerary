@@ -1,32 +1,37 @@
-.cardItinerary{
-    width: 90%; 
-    padding: 1.5rem 0 0;
-  
-  }
-  .cardItineraries{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column ;
-    border-radius: 20px !important;
-    margin-bottom: 1.5rem;
-  }
-  .cardItineraries:hover{
-    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+.cardItinerary {
+  width: 90%;
+  padding: 1.5rem 0 0;
+
+}
+
+.cardItineraries {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px !important;
+  margin-bottom: 1.5rem;
+}
+
+.cardItineraries:hover {
+  box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
   transform: translateY(-3px);
-  
-  }
-.imageCardMedia{
-    width: 50% !important;    
+
 }
-.viewPrincipal{
-    display: flex;
-    flex-direction: row;
+
+.imageCardMedia {
+  width: 50% !important;
 }
-.titleItineries{
+
+.viewPrincipal {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleItineries {
   font-size: 1.5rem !important;
   margin-bottom: .5rem !important;
   color: white;
@@ -34,133 +39,176 @@
   text-align: center;
 
 }
-.iconsItinaries .buttonExpand{
-    display: flex;
-    width: auto;
-    flex-direction: row;
-    background-color: #ffa100;
-    border-radius: 15px;
-    padding: 0 0 0 .5rem;
-    align-items: center;
-    justify-content: flex-end !important;
 
+.iconsItinaries .buttonExpand {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  background-color: #ffa100;
+  border-radius: 15px;
+  padding: 0 0 0 .5rem;
+  align-items: center;
+  justify-content: flex-end !important; 
 }
-.iconsItinaries{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start !important;
-    ;
+
+.iconsItinaries .exploreMore{
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: estrella;
+  animation-name: estrella;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;  
 }
-.iconsItinaries div{
+
+@-webkit-keyframes estrella {
+  80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);    
+  }
+}
+
+@keyframes estrella {
+  80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);    
+  }
+}
+
+.iconsItinaries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  
+}
+
+.iconsItinaries div {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.iconsItinaries div img{
+
+.iconsItinaries div img {
   padding: .5rem;
 }
-.cardCarouselItinerary{
+
+.cardCarouselItinerary {
   width: 100%;
 }
-.cardCarouselItinerary .cardCarouselItineraries{
+
+.cardCarouselItinerary .cardCarouselItineraries {
   width: 50%;
   padding: 0;
 }
-.viewPrincipal .css-46bh2p-MuiCardContent-root:last-child{
+
+.viewPrincipal .css-46bh2p-MuiCardContent-root:last-child {
   padding: 1rem 1rem 0;
 }
-.messageNoFound{
+
+.messageNoFound {
   display: flex;
   flex-direction: column;
   font-size: 2.5rem;
   color: #ffa100;
   padding-top: 0;
 }
-.messageNoFound img{
+
+.messageNoFound img {
   width: 20%;
 }
 
-.hashtags{
+.hashtags {
   width: 100%;
 }
-.hashtags ul{
+
+.hashtags ul {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  
-  
+
+
 }
-.hashtags ul li{
+
+.hashtags ul li {
   list-style: none;
   padding-right: .5rem;
-  color:#f19100
+  color: #f19100
 }
-.hashtags ul li:hover{
+
+.hashtags ul li:hover {
   color: #1900fd;
   cursor: pointer;
 }
-.favorite-icon {  
-  color: #1900fd!important;
+
+.favorite-icon {
+  color: #1900fd !important;
 }
 
-.css-w36qm6-MuiTypography-root{
+.css-w36qm6-MuiTypography-root {
   font-size: 1.2rem !important;
 }
 
-.css-sgoict-MuiCardHeader-action{
+.css-sgoict-MuiCardHeader-action {
   align-self: center !important;
 }
 
-.cardContentItinerary .css-185gdzj-MuiCardHeader-root{
+.cardContentItinerary .css-185gdzj-MuiCardHeader-root {
   align-items: center;
   padding: 0 !important;
   padding-bottom: 0.5rem !important;
 }
 
 @media (max-width: 769px) {
-  .itinerariesTitle{
+  .itinerariesTitle {
     min-width: 30%;
   }
 }
 
 @media (max-width: 426px) {
 
-  .viewPrincipal{
+  .viewPrincipal {
     flex-direction: column;
   }
-  .viewPrincipal .imageCardMedia{
+
+  .viewPrincipal .imageCardMedia {
     width: 100% !important;
   }
-  .cardCarouselItinerary{
+
+  .cardCarouselItinerary {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .cardCarouselItinerary .cardCarouselItineraries{
+
+  .cardCarouselItinerary .cardCarouselItineraries {
     width: 80%;
-    
+
   }
-  .carouselFlip{
+
+  .carouselFlip {
     width: 90%;
   }
-  .itinerariesTitle{
+
+  .itinerariesTitle {
     min-width: 60%;
   }
 }
 
-@media (max-width: 321px){
-  .carouselFlip{
+@media (max-width: 321px) {
+  .carouselFlip {
     max-width: 80%;
   }
-  .css-w36qm6-MuiTypography-root{
+
+  .css-w36qm6-MuiTypography-root {
     font-size: 1rem !important;
   }
-  .imageDolar{
+
+  .imageDolar {
     width: 22px !important;
   }
-  .cardContentItinerary{
+
+  .cardContentItinerary {
     padding: .5rem !important;
   }
 }
