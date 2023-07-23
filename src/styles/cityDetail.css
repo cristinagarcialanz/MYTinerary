@@ -1,6 +1,9 @@
 .backCities {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   align-items: center;
   color: white;
   text-decoration: none;
@@ -12,6 +15,7 @@
   max-width: 5rem;
   margin: 1rem 0 0 1rem;
   transition: transform 0.3s ease;
+  z-index: 999;
 }
 
 .backCities:hover {

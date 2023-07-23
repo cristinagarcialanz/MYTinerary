@@ -33,12 +33,21 @@ const Itineraries =({ cityId }) => {
   const dispatch = useDispatch();
   const itineraries = useSelector((state) => state.itineraryReducer.itineraries);
   const favorites = useSelector((state) => state.itineraryReducer.favorites);
-  const [expanded, setExpanded] = React.useState(false);
+ // const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState({});
 
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
+
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
+  const handleExpandClick = (itineraryId) => {
+    setExpanded((prevExpanded) => ({
+      ...prevExpanded,
+      [itineraryId]: !prevExpanded[itineraryId]
+    }));
   };
+  
 
   const handleFavoriteClick = (itineraryId) => {
     if (favorites.includes(itineraryId)) {
@@ -116,9 +125,9 @@ const Itineraries =({ cityId }) => {
                     <div className='buttonExpand exploreMore'>
                       <p>Explore More</p>
                       <ExpandMore 
-                        expand={expanded}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
+                        expand={expanded[itinerary._id]}
+                        onClick={() => handleExpandClick(itinerary._id)}
+                        aria-expanded={expanded[itinerary._id]}
                         aria-label="show more"
                       >
 
@@ -130,7 +139,7 @@ const Itineraries =({ cityId }) => {
                 </CardActions>
               </CardContent>
             </div>
-            <Collapse in={expanded} timeout="auto" unmountOnExit className='cardCarouselItinerary'>
+            <Collapse in={expanded[itinerary._id]}  timeout="auto" unmountOnExit className='cardCarouselItinerary'>
               <div className='titleItinerary'>
                 <h2 className='itinerariesTitle'>Let's Explore</h2>
 
