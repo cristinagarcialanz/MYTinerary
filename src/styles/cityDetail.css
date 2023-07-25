@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: .3rem;
+  padding: .1rem;
   font-size: 1rem;
   border-radius: 50px;
   border: 2px solid #ffa100;
