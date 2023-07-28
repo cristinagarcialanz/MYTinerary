@@ -146,7 +146,7 @@ const Itineraries =({ cityId }) => {
               </div>
               <CardContent className='cardCarouselItineraries'>
 
-                <CarouselFlip images={itinerary.image} />
+                <CarouselFlip images={itinerary.image} nameActivity={itinerary.nameActivity} />
 
               </CardContent>
             </Collapse>
