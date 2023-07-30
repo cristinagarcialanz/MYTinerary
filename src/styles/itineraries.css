@@ -182,7 +182,7 @@
   }
 
   .cardCarouselItinerary .cardCarouselItineraries {
-    width: 80%;
+    width: 100%;
 
   }
 
@@ -197,9 +197,12 @@
 
 @media (max-width: 321px) {
   .carouselFlip {
-    max-width: 80%;
+    max-width: 100%;
   }
-
+  .cardCarouselItinerary .cardCarouselItineraries{
+    width: 100%;
+  }
+  
   .css-w36qm6-MuiTypography-root {
     font-size: 1rem !important;
   }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import '../styles/cities.css';
 import * as React from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { animateScroll as scroll } from 'react-scroll';
 import Search from './Search';
 import CityCard from './CityCard';
 import {useDispatch, useSelector } from "react-redux";
@@ -32,6 +33,10 @@ useEffect(() => {
   setIsLoading(cities.length === 0);
 }, [cities]);
 
+const scrollToTop = () => {
+  scroll.scrollToTop();
+};
+
   const showNoResultsMessage = searchResult.length === 0 && !isLoading;
   
   return (
@@ -59,8 +64,9 @@ useEffect(() => {
               </div>
 
             )}
-        <a href=" " className="subir"><KeyboardArrowUpIcon /></a>
+             <button className="subir" onClick={scrollToTop}><KeyboardArrowUpIcon /></button>
       </div >
+     
     </div >
 
   );

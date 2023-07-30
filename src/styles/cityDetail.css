@@ -156,3 +156,15 @@
 #link{
   margin-top: 1rem;
 }
+@media (max-width: 376px) {
+   
+  .backCities{
+    font-size: .8rem;
+  }
+}
+@media (max-width: 321px) {
+   
+  .backCities{
+    font-size: .8rem;
+  }
+}

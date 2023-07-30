@@ -171,6 +171,10 @@ footer .foo-row .foo-col ul li a:hover {
   footer .foo-row .foo-col h2 {
     font-size: 1.3rem;
   }
+  footer .foo-row .foo-col ul {
+    flex-wrap: nowrap;
+    
+  }
 
   .footer .foo-row .foo-col ul li a {
     font-size: 1rem;
@@ -219,8 +223,9 @@ footer .foo-row .foo-col ul li a:hover {
 
 @media (max-width: 376px) {
   .footer .foo-row .foo-col ul {
-    justify-content: space-between;
+    padding: 0;
   }  
+  
 }
 
 @media (max-width: 321px) {
@@ -237,10 +242,6 @@ footer .foo-row .foo-col ul li a:hover {
   height: 31px !important;  
   }
 
-  .footer .foo-row .foo-col ul {
-    padding-left: 1rem;
-  }
-
   .footer .foo-row .foo-col ul li {
     width: 55%;
   }
@@ -252,5 +253,15 @@ footer .foo-row .foo-col ul li a:hover {
   .foo-copy {
     font-size: 0.7rem;
     margin: 0.2rem 0 0 3rem;
+  }
+  footer form .f-input {
+    width: 62%;
+    position: relative;
+  }
+  footer form .f-input .hm-btn-round{
+    right: -20%;
+  }
+  .foo-copy{
+    font-size: .5rem;
   }
 }
