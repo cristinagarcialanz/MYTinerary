@@ -47,7 +47,7 @@ const scrollToTop = () => {
         {showNoResultsMessage ? (
           <div className='messageNoFound'>No destinations found <img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Fsearch%20(2).gif?alt=media&token=0a5ce9da-7e7a-4f14-ba62-58eedd311486" alt='' /></div>
         ) :
-
+        
         filteredCities.length > 0 ? (
           filteredCities.map((city) => (
               <CityCard key={city._id} city={city} />
@@ -62,11 +62,11 @@ const scrollToTop = () => {
                   </div>
                 </div>
               </div>
-
+                
             )}
-             <button className="subir" onClick={scrollToTop}><KeyboardArrowUpIcon /></button>
+            <button className="subir" onClick={scrollToTop}><KeyboardArrowUpIcon /></button>
       </div >
-     
+    
     </div >
 
   );

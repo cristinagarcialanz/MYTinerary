@@ -1,14 +1,14 @@
 .backCities {
   display: flex;
   flex-direction: row;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+  position: absolute;
+  bottom: 5rem;
+  right: .5rem;
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: .1rem;
-  font-size: 1rem;
+  padding: .7rem;
+  font-size: 1.2rem;
   border-radius: 50px;
   border: 2px solid #ffa100;
   background: #ffa100;
