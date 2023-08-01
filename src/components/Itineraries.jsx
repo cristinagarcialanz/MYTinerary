@@ -69,7 +69,7 @@ const Itineraries =({ cityId }) => {
       {itineraries.length === 0 ? (
 
         <div className="messageNoFound">
-          <h3>Itinerary under construction...</h3>
+          <h3>Loading Itineraries...</h3>
           <img src="https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/itineraries%2Frecurring-settings.gif?alt=media&token=f0cf26e3-f677-4bf0-91ec-647c54841644" alt="" />
         </div>
       ) : (
