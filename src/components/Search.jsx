@@ -1,4 +1,4 @@
-import citiesActions from "../redux/actions/citiesActions"
+import citiesActions from "../redux/actions/sesionsActions"
 import { useDispatch } from "react-redux"
 import SearchIcon from '@mui/icons-material/Search';
 
