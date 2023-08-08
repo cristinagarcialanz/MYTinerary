@@ -1,10 +1,10 @@
 const initialState = {
-  cities: [],
-  auxCities: [],
+  sesions: [],
+  auxSesions: [],
   searchResult: [],
 }
 
-const citiesReducer = (state = initialState, action) => {
+const sesionsReducer = (state = initialState, action) => {
 
   switch (action.type) {
     case "searchResult":
@@ -12,10 +12,10 @@ const citiesReducer = (state = initialState, action) => {
         ...state,
         searchResult: action.payload
       }
-    case "loadCities":
+    case "loadSesions":
       return {
         ...state,
-        cities: action.payload,
+        sesions: action.payload,
         searchResult: action.payload
       }
     default:
@@ -24,4 +24,4 @@ const citiesReducer = (state = initialState, action) => {
   }
 }
 
-export default citiesReducer
+export default sesionsReducer
