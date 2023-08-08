@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const sesionsActions = {
+const citiesActions = {
 
   searchResult: (filterResult) => {
     return (dispatch, getState) => {
@@ -9,10 +9,10 @@ const sesionsActions = {
 
   },
 
-  getSesions: () => {
+  getCities: () => {
     return async (dispatch, getState) => {
       const res = await axios.get('https://cristina-api-cities-crud.onrender.com/api/cities')
-      dispatch({ type: "loadSesions", payload: res.data.response.sesions })
+      dispatch({ type: "loadCities", payload: res.data.response.cities })
     }
   }
 
@@ -23,4 +23,4 @@ const sesionsActions = {
 
 
 
-export default sesionsActions;
+export default citiesActions;

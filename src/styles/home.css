@@ -63,7 +63,7 @@ body {
 }
 
 .banner-container {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/susangarcialanzdeweissbacher.appspot.com/o/imagenes%2Fjumbotron.jpg?alt=media&token=0b2c8155-a8ba-41a3-9b72-543135f9f3df');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/mytinerary-cities.appspot.com/o/banner.jpg?alt=media&token=f04db355-8eea-43c8-a264-18df7b4a1a39');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,7 +103,6 @@ body {
 
 .modal h3 a img {
   width: 9rem;
-  border-radius: 100%;
 }
 
 .modal h3 a img:hover {

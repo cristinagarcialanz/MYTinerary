@@ -15,7 +15,7 @@ function Home() {
       <div className='modal'>
 
       <h3>Choose your tourist destination <ArrowForwardIosIcon/>
-        <LinkRouter to={'/Cities'}><img src="https://firebasestorage.googleapis.com/v0/b/susangarcialanzdeweissbacher.appspot.com/o/imagenes%2Fgiphy%20(2).gif?alt=media&token=ab12b0a2-592a-4b53-ac29-bc42ad4f70f5" alt='Call to action'/></LinkRouter>
+        <LinkRouter to={'/Cities'}><img src="https://cdn.discordapp.com/attachments/1116849578575155230/1120061436018823290/pandb-travel.gif" alt='Call to action'/></LinkRouter>
         </h3>
       </div>
     </div>

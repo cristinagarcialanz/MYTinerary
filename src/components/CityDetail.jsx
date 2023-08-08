@@ -7,7 +7,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link as LinkRouter } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import detailAction from '../redux/actions/detailAction';
-import CityDetailCard from './SesionDetailCard';
+import CityDetailCard from './CityDetailCard';
 
 function CityDetail() {
   const dispatch = useDispatch();
